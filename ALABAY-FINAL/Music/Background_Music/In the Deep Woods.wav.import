@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://hoohc2g24la"
+path="res://.godot/imported/In the Deep Woods.wav-58bba596c8e02b59816bd3c727b30bc6.sample"
+
+[deps]
+
+source_file="res://Music/Background_Music/In the Deep Woods.wav"
+dest_files=["res://.godot/imported/In the Deep Woods.wav-58bba596c8e02b59816bd3c727b30bc6.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=2
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

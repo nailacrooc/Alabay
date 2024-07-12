@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bjt4xtcsa8a3c"
+path="res://.godot/imported/howlingwolf.ogg-cae38366f916a764deb7481e6224ebe8.oggvorbisstr"
+
+[deps]
+
+source_file="res://Day And Night/assets/howlingwolf.ogg"
+dest_files=["res://.godot/imported/howlingwolf.ogg-cae38366f916a764deb7481e6224ebe8.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

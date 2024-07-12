@@ -1,0 +1,296 @@
+[gd_scene load_steps=25 format=3 uid="uid://f7br4dq4rs42"]
+
+[ext_resource type="Shader" path="res://Tug Of War/tug_of_war.gdshader" id="1_p7ka5"]
+[ext_resource type="Script" path="res://Tug Of War/player-finish-tug-of-war.gd" id="2_3v87r"]
+[ext_resource type="Texture2D" uid="uid://br6kjn2gn7cq5" path="res://Tug Of War/player.png" id="3_ae8uo"]
+[ext_resource type="Script" path="res://Tug Of War/Center.gd" id="3_ehy8p"]
+[ext_resource type="Texture2D" uid="uid://i25v1e131ajp" path="res://Assets/Character Assets/Kapre.png" id="4_y2k6h"]
+[ext_resource type="FontFile" uid="uid://c2fe063latqy4" path="res://Assets/Fonts/Minecraftia-Regular.ttf" id="7_7uwon"]
+[ext_resource type="Texture2D" uid="uid://cupbystxycviq" path="res://Assets/maps/tilesheet_basic.png" id="7_e4asw"]
+[ext_resource type="Texture2D" uid="uid://bg5or8owvut82" path="res://Tug Of War/blueSpiritidle.png" id="7_mgnyo"]
+[ext_resource type="Texture2D" uid="uid://4ejj3r8scv1g" path="res://Assets/maps/terrain_tiles_v2.png" id="8_ylyar"]
+[ext_resource type="Texture2D" uid="uid://ceh25jsb0j5r3" path="res://Assets/maps/assets_basic.png" id="9_7ajta"]
+[ext_resource type="Texture2D" uid="uid://drywnsyv4puej" path="res://Assets/maps/water_and_island_tiles_v2.png" id="10_aget1"]
+[ext_resource type="FontVariation" uid="uid://yo5ealhql1f1" path="res://Assets/Fonts/upheaval.tres" id="12_2em6i"]
+[ext_resource type="FontVariation" uid="uid://ckeuldwvf8rq5" path="res://Assets/Fonts/mcpe_font.tres" id="12_doj8r"]
+[ext_resource type="Texture2D" uid="uid://da5yy7p3qnpyo" path="res://Assets/UI Assets/gold_coin.png" id="13_gjm8a"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_mms22"]
+font = ExtResource("7_7uwon")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ivbeh"]
+texture = ExtResource("7_e4asw")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dkmtp"]
+texture = ExtResource("8_ylyar")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jj11l"]
+texture = ExtResource("9_7ajta")
+4:7/0 = 0
+5:7/0 = 0
+5:6/0 = 0
+4:6/0 = 0
+3:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+2:7/0 = 0
+1:7/0 = 0
+3:7/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+7:1/0 = 0
+6:1/0 = 0
+5:0/0 = 0
+4:0/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+7:3/0 = 0
+6:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ew6eo"]
+texture = ExtResource("10_aget1")
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+5:4/0 = 0
+5:3/0 = 0
+5:2/0 = 0
+5:1/0 = 0
+4:1/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+3:0/0 = 0
+2:0/0 = 0
+2:1/0 = 0
+1:0/0 = 0
+1:1/0 = 0
+1:2/0 = 0
+1:3/0 = 0
+1:4/0 = 0
+2:2/0 = 0
+2:4/0 = 0
+2:3/0 = 0
+3:1/0 = 0
+3:2/0 = 0
+3:3/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+4:3/0 = 0
+4:2/0 = 0
+0:5/0 = 0
+0:4/0 = 0
+0:3/0 = 0
+0:2/0 = 0
+0:1/0 = 0
+0:0/0 = 0
+0:10/0 = 0
+1:10/0 = 0
+2:10/0 = 0
+4:10/0 = 0
+3:10/0 = 0
+5:10/0 = 0
+5:11/0 = 0
+4:11/0 = 0
+0:11/0 = 0
+2:11/0 = 0
+3:11/0 = 0
+1:11/0 = 0
+0:12/0 = 0
+1:12/0 = 0
+2:12/0 = 0
+3:12/0 = 0
+4:12/0 = 0
+5:12/0 = 0
+0:13/0 = 0
+1:13/0 = 0
+2:13/0 = 0
+3:13/0 = 0
+4:13/0 = 0
+5:13/0 = 0
+0:9/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+5:9/0 = 0
+5:8/0 = 0
+4:8/0 = 0
+3:8/0 = 0
+1:8/0 = 0
+0:8/0 = 0
+2:8/0 = 0
+22:2/0 = 0
+23:2/0 = 0
+24:2/0 = 0
+25:2/0 = 0
+26:2/0 = 0
+27:2/0 = 0
+22:3/0 = 0
+23:3/0 = 0
+24:3/0 = 0
+25:3/0 = 0
+26:3/0 = 0
+27:3/0 = 0
+27:4/0 = 0
+27:5/0 = 0
+26:5/0 = 0
+26:4/0 = 0
+25:4/0 = 0
+24:4/0 = 0
+23:4/0 = 0
+22:4/0 = 0
+22:5/0 = 0
+23:5/0 = 0
+24:5/0 = 0
+25:5/0 = 0
+26:6/0 = 0
+25:6/0 = 0
+24:6/0 = 0
+23:6/0 = 0
+22:6/0 = 0
+27:6/0 = 0
+22:7/0 = 0
+23:7/0 = 0
+24:7/0 = 0
+25:7/0 = 0
+26:7/0 = 0
+27:7/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_vd3x7"]
+sources/0 = SubResource("TileSetAtlasSource_ivbeh")
+sources/1 = SubResource("TileSetAtlasSource_dkmtp")
+sources/2 = SubResource("TileSetAtlasSource_jj11l")
+sources/3 = SubResource("TileSetAtlasSource_ew6eo")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_i43ab"]
+shader = ExtResource("1_p7ka5")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yc278"]
+size = Vector2(28, 43)
+
+[sub_resource type="SphereMesh" id="SphereMesh_pfef2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_guvcc"]
+
+[node name="tug_of_war" type="Node2D"]
+position = Vector2(264, 159)
+
+[node name="UIPrompt" type="Label" parent="."]
+z_index = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -109.0
+offset_top = -88.0
+offset_right = 109.0
+offset_bottom = -60.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+text = "Title"
+label_settings = SubResource("LabelSettings_mms22")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_vd3x7")
+format = 2
+layer_0/name = "Ground"
+layer_0/z_index = -1
+layer_0/tile_data = PackedInt32Array(196602, 65539, 5, 196603, 131075, 5, 196604, 196611, 5, 196605, 262147, 5, 196606, 65539, 5, 196607, 131075, 5, 131072, 196611, 5, 131073, 262147, 5, 131074, 65539, 5, 131075, 131075, 5, 131076, 196611, 5, 131077, 262147, 5, 131078, 65539, 5, 131079, 131075, 5, 131080, 196611, 5, 131081, 262147, 5, 196598, 65539, 5, 196599, 131075, 5, 196600, 196611, 5, 196601, 262147, 5, 196597, 3, 5, 131082, 327683, 5, -131083, 3, 0, -65547, 3, 1, -11, 3, 2, 65525, 3, 3, 131061, 3, 4, -196598, 327683, 0, -131062, 327683, 1, -65526, 327683, 2, 10, 327683, 3, 65546, 327683, 4, -131082, 65539, 0, -131081, 131075, 0, -131080, 196611, 0, -131079, 262147, 0, -131078, 65539, 0, -131077, 131075, 0, -131076, 196611, 0, -131075, 262147, 0, -131074, 65539, 0, -131073, 131075, 0, -196608, 196611, 0, -196607, 262147, 0, -196606, 65539, 0, -196605, 131075, 0, -196604, 196611, 0, -196603, 262147, 0, -196602, 65539, 0, -196601, 131075, 0, -196600, 196611, 0, -196599, 262147, 0, -8, 65539, 1, -65544, 65539, 1, -65545, 65539, 1, -65546, 65539, 1, -10, 65539, 1, 65526, 65539, 1, 131062, 65539, 1, 131063, 65539, 1, 65527, 65539, 1, -9, 65539, 1, 65528, 65539, 1, 131064, 65539, 1, 131065, 65539, 1, 65529, 65539, 1, -7, 65539, 1, -65543, 65539, 1, -65542, 65539, 1, -6, 65539, 1, 65530, 65539, 1, 131066, 65539, 1, 131067, 65539, 1, 65531, 65539, 1, -5, 65539, 1, -65541, 65539, 1, -65540, 65539, 1, -4, 65539, 1, 65532, 65539, 1, 131068, 65539, 1, 131069, 65539, 1, 65533, 65539, 1, -3, 65539, 1, -65539, 65539, 1, -65538, 65539, 1, -2, 65539, 1, 65534, 65539, 1, 131070, 65539, 1, 131071, 65539, 1, 65535, 65539, 1, -1, 65539, 1, -65537, 65539, 1, -131072, 65539, 1, -65536, 65539, 1, 0, 65539, 1, 65536, 65539, 1, 65537, 65539, 1, 1, 65539, 1, -65535, 65539, 1, -131071, 65539, 1, -131070, 65539, 1, -65534, 65539, 1, 2, 65539, 1, 65538, 65539, 1, 65539, 65539, 1, 3, 65539, 1, -65533, 65539, 1, -131069, 65539, 1, -131068, 65539, 1, -65532, 65539, 1, 4, 65539, 1, 65540, 65539, 1, 65541, 65539, 1, 5, 65539, 1, -65531, 65539, 1, -131067, 65539, 1, -131066, 65539, 1, -65530, 65539, 1, 6, 65539, 1, 65542, 65539, 1, 65543, 65539, 1, 7, 65539, 1, -65529, 65539, 1, -131065, 65539, 1, -131064, 65539, 1, -65528, 65539, 1, 8, 65539, 1, 65544, 65539, 1, 65545, 65539, 1, 9, 65539, 1, -65527, 65539, 1, -131063, 65539, 1)
+layer_1/name = "Lower Ground"
+layer_1/z_index = -3
+layer_1/tile_data = PackedInt32Array(196597, 3, 8, 262133, 3, 9, 327669, 3, 10, 393205, 3, 11, 196598, 65539, 8, 262134, 65539, 9, 327670, 65539, 10, 393206, 65539, 11, 196599, 131075, 8, 262135, 131075, 9, 327671, 131075, 10, 393207, 131075, 11, 196600, 196611, 8, 262136, 196611, 9, 327672, 196611, 10, 393208, 196611, 11, 196601, 262147, 8, 262137, 262147, 9, 327673, 262147, 10, 393209, 262147, 11, 196602, 65539, 8, 262138, 65539, 9, 327674, 65539, 10, 393210, 65539, 11, 196603, 131075, 8, 262139, 131075, 9, 327675, 131075, 10, 393211, 131075, 11, 196604, 196611, 8, 262140, 196611, 9, 327676, 196611, 10, 393212, 196611, 11, 196605, 262147, 8, 262141, 262147, 9, 327677, 262147, 10, 393213, 262147, 11, 196606, 65539, 8, 262142, 65539, 9, 327678, 65539, 10, 393214, 65539, 11, 196607, 131075, 8, 262143, 131075, 9, 327679, 131075, 10, 393215, 131075, 11, 131072, 196611, 8, 196608, 196611, 9, 262144, 196611, 10, 327680, 196611, 11, 131073, 262147, 8, 196609, 262147, 9, 262145, 262147, 10, 327681, 262147, 11, 131074, 65539, 8, 196610, 65539, 9, 262146, 65539, 10, 327682, 65539, 11, 131075, 131075, 8, 196611, 131075, 9, 262147, 131075, 10, 327683, 131075, 11, 131076, 196611, 8, 196612, 196611, 9, 262148, 196611, 10, 327684, 196611, 11, 131077, 262147, 8, 196613, 262147, 9, 262149, 262147, 10, 327685, 262147, 11, 131078, 65539, 8, 196614, 65539, 9, 262150, 65539, 10, 327686, 65539, 11, 131079, 131075, 8, 196615, 131075, 9, 262151, 131075, 10, 327687, 131075, 11, 131080, 196611, 8, 196616, 196611, 9, 262152, 196611, 10, 327688, 196611, 11, 131081, 262147, 8, 196617, 262147, 9, 262153, 262147, 10, 327689, 262147, 11, 131082, 327683, 8, 196618, 327683, 9, 262154, 327683, 10, 327690, 327683, 11)
+layer_2/name = "Water"
+layer_2/tile_data = PackedInt32Array(-196619, 1441795, 2, -196618, 1507331, 2, -196617, 1572867, 2, -196616, 1638403, 2, -196615, 1703939, 2, -196614, 1769475, 2, -196613, 1441795, 2, -196612, 1507331, 2, -196611, 1572867, 2, -196610, 1638403, 2, -196609, 1703939, 2, -262144, 1769475, 2, -262143, 1441795, 2, -262142, 1507331, 2, -262141, 1572867, 2, -262140, 1638403, 2, -262139, 1703939, 2, -262138, 1441795, 2, -262137, 1507331, 2, -262136, 1572867, 2, -262135, 1638403, 2, -262134, 1703939, 2, -262133, 1769475, 2, -131083, 1441795, 2, -131082, 1507331, 2, -131081, 1572867, 2, -131080, 1638403, 2, -131079, 1703939, 2, -131078, 1769475, 2, -131077, 1441795, 2, -131076, 1507331, 2, -131075, 1572867, 2, -131074, 1638403, 2, -131073, 1703939, 2, -196608, 1769475, 2, -196607, 1441795, 2, -196606, 1507331, 2, -196605, 1572867, 2, -196604, 1638403, 2, -196603, 1703939, 2, -196602, 1441795, 2, -196601, 1507331, 2, -196600, 1572867, 2, -196599, 1638403, 2, -196598, 1703939, 2, -196597, 1769475, 2, -262155, 1441795, 2, -262154, 1507331, 2, -262153, 1572867, 2, -262152, 1638403, 2, -262151, 1703939, 2, -262150, 1769475, 2, -327691, 1441795, 2, -327690, 1507331, 2, -327689, 1572867, 2, -327688, 1638403, 2, -327687, 1703939, 2, -327686, 1769475, 2, -327685, 1441795, 2, -327684, 1507331, 2, -327683, 1572867, 2, -327682, 1638403, 2, -327681, 1703939, 2, -393216, 1441795, 2, -262149, 1441795, 2, -262148, 1507331, 2, -262147, 1572867, 2, -262146, 1638403, 2, -262145, 1703939, 2, -327680, 1769475, 2, -393215, 1507331, 2, -393214, 1572867, 2, -393213, 1638403, 2, -393212, 1441795, 2, -393211, 1507331, 2, -327679, 1441795, 2, -327678, 1507331, 2, -327677, 1572867, 2, -327676, 1638403, 2, -327675, 1441795, 2, -327674, 1441795, 2, -393210, 1441795, 2, -393209, 1507331, 2, -393208, 1572867, 2, -393207, 1638403, 2, -327673, 1507331, 2, -327672, 1572867, 2, -327671, 1638403, 2, -327670, 1703939, 2, -393206, 1703939, 2, -393205, 1769475, 2, -327669, 1769475, 2)
+layer_3/name = "Decor"
+layer_3/tile_data = PackedInt32Array(-196618, 131074, 6, -131082, 65539, 0, -196617, 196610, 6, -131081, 131075, 0, -327685, 131074, 6, -262149, 131074, 7, -327684, 196610, 6, -262148, 196610, 7, -262143, 131074, 6, -196607, 65539, 0, -262142, 196610, 6, -196606, 131075, 0, -393210, 131074, 6, -327674, 131074, 7, -393209, 196610, 6, -327673, 196610, 7, -196611, 262146, 6, -131075, 262147, 0, -196610, 327682, 6, -131074, 65539, 0, -262151, 262146, 6, -196615, 262146, 7, -262150, 327682, 6, -196614, 327682, 7, -262136, 262146, 6, -196600, 196611, 0, -262135, 327682, 6, -196599, 262147, 0, 65526, 262146, 2, 131062, 262146, 3, 65527, 327682, 2, 131063, 327682, 3, -131063, 262146, 2, -65527, 262146, 3, -131062, 327682, 2, -65526, 327682, 3, -65544, 393218, 0, -8, 393218, 1, -65543, 458754, 0, -7, 458754, 1, 7, 393218, 0, 65543, 393218, 1, 8, 458754, 0, 65544, 458754, 1, -131083, 3, 0, -131080, 196611, 0, -131079, 262147, 0, -131078, 65539, 0, -131077, 131075, 0, -131076, 196611, 0, -131073, 131075, 0, -196608, 196611, 0, -196605, 65539, 0, -196604, 131075, 0, -196603, 65539, 0, -196602, 65539, 0, -196601, 131075, 0, -196598, 327683, 0)
+
+[node name="Player" type="Area2D" parent="."]
+material = SubResource("ShaderMaterial_i43ab")
+use_parent_material = true
+script = ExtResource("2_3v87r")
+
+[node name="Player2" type="Sprite2D" parent="Player"]
+texture_filter = 1
+position = Vector2(-73, 1.99999)
+scale = Vector2(1.5, 1.46774)
+texture = ExtResource("3_ae8uo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+position = Vector2(-74, 2.5)
+shape = SubResource("RectangleShape2D_yc278")
+
+[node name="Enemy" type="Area2D" parent="."]
+
+[node name="Kapre" type="Sprite2D" parent="Enemy"]
+texture_filter = 1
+position = Vector2(80, -15)
+rotation = 3.14159
+scale = Vector2(0.962569, -0.937067)
+texture = ExtResource("4_y2k6h")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy"]
+position = Vector2(78, 2)
+shape = SubResource("RectangleShape2D_yc278")
+
+[node name="Shadow" type="MeshInstance2D" parent="Enemy"]
+modulate = Color(0, 0, 0, 0.184314)
+z_index = -1
+position = Vector2(84, 18.2187)
+scale = Vector2(56.0635, 13.5625)
+mesh = SubResource("SphereMesh_pfef2")
+
+[node name="Center" type="Area2D" parent="."]
+script = ExtResource("3_ehy8p")
+
+[node name="BlueSpiritidle" type="Sprite2D" parent="Center"]
+position = Vector2(-4.25, -2.5)
+scale = Vector2(0.742424, 0.78125)
+texture = ExtResource("7_mgnyo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Center"]
+position = Vector2(-4, 0)
+shape = SubResource("RectangleShape2D_yc278")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(3.5, 3.5)
+
+[node name="Button" type="Button" parent="."]
+offset_left = -80.0
+offset_top = 41.0
+offset_right = 76.0
+offset_bottom = 67.0
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("12_2em6i")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/focus = SubResource("StyleBoxEmpty_guvcc")
+text = "BACK TO WORLD"
+flat = true
+
+[node name="gold_coin" type="Sprite2D" parent="."]
+position = Vector2(-23, -53)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("13_gjm8a")
+
+[node name="coin_amount" type="Label" parent="."]
+offset_left = -9.0
+offset_top = -65.0
+offset_right = 31.0
+offset_bottom = -37.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("12_doj8r")
+text = "+ 20"
+
+[connection signal="pressed" from="Button" to="Center" method="_on_button_pressed"]

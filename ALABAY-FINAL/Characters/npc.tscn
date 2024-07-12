@@ -1,0 +1,105 @@
+[gd_scene load_steps=12 format=3 uid="uid://dtotuiwb5xydk"]
+
+[ext_resource type="Texture2D" uid="uid://p8744q7ayry" path="res://Assets/Character Assets/char.png" id="1_3nmpt"]
+[ext_resource type="Script" path="res://Characters/npc.gd" id="1_g3ybh"]
+[ext_resource type="PackedScene" uid="uid://rhb6s5wxkfuj" path="res://Quests/npc_quest.tscn" id="2_6dbqx"]
+[ext_resource type="FontVariation" uid="uid://ckeuldwvf8rq5" path="res://Assets/Fonts/mcpe_font.tres" id="3_2eh6h"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_elqx3"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3dmd2"]
+atlas = ExtResource("1_3nmpt")
+region = Rect2(0, 12, 190, 190)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jn8tl"]
+atlas = ExtResource("1_3nmpt")
+region = Rect2(190, 12, 190, 190)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dtt4p"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3dmd2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jn8tl")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 3.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fixdg"]
+size = Vector2(104, 176)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_d6yjb"]
+radius = 216.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_1b8hg"]
+
+[node name="NPC" type="CharacterBody2D"]
+script = ExtResource("1_g3ybh")
+
+[node name="Shadow" type="MeshInstance2D" parent="."]
+modulate = Color(0, 0, 0, 0.184314)
+z_index = 3
+position = Vector2(-5.68432e-14, 88)
+rotation = 3.14159
+scale = Vector2(113.098, 26.1715)
+mesh = SubResource("SphereMesh_elqx3")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_dtt4p")
+animation = &"idle"
+frame_progress = 0.359883
+
+[node name="Collider" type="CollisionShape2D" parent="."]
+position = Vector2(-4, 0)
+shape = SubResource("RectangleShape2D_fixdg")
+
+[node name="npc_area" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="npc_area"]
+shape = SubResource("CircleShape2D_d6yjb")
+
+[node name="npc_quest" parent="." instance=ExtResource("2_6dbqx")]
+z_index = 13
+offset_left = -192.0
+offset_top = -304.0
+offset_right = -192.0
+offset_bottom = -304.0
+
+[node name="enter_npc_area" type="Node2D" parent="npc_quest"]
+position = Vector2(248, 288)
+scale = Vector2(2, 1.993)
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="npc_quest/enter_npc_area"]
+self_modulate = Color(0.0627451, 0.0627451, 0.0627451, 0.129412)
+position = Vector2(13.3519, -20.0988)
+scale = Vector2(14.0048, 18.1958)
+mesh = SubResource("BoxMesh_1b8hg")
+
+[node name="Label" type="Label" parent="npc_quest/enter_npc_area"]
+offset_left = 8.34495
+offset_top = -30.9857
+offset_right = 20.3449
+offset_bottom = -2.98568
+theme_override_fonts/font = ExtResource("3_2eh6h")
+text = "E"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="npc_quest/enter_npc_area/Label"]
+layout_mode = 0
+offset_left = 15.8554
+offset_top = 5.0247
+offset_right = 71.8554
+offset_bottom = 33.0247
+scale = Vector2(0.5, 0.5)
+theme_override_fonts/font = ExtResource("3_2eh6h")
+text = "Interact"
+metadata/_edit_use_anchors_ = true
+
+[connection signal="body_entered" from="npc_area" to="npc_quest" method="_on_npc_area_body_entered"]
+[connection signal="body_exited" from="npc_area" to="npc_quest" method="_on_npc_area_body_exited"]
+[connection signal="q1_active" from="npc_quest" to="." method="_on_npc_quest_q_1_active"]
+[connection signal="quest_menu_closed" from="npc_quest" to="." method="_on_npc_quest_quest_menu_closed"]

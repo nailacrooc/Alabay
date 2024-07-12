@@ -1,0 +1,148 @@
+[gd_scene load_steps=6 format=3 uid="uid://bg1jeojpj63h0"]
+
+[ext_resource type="Script" path="res://UI/pause_menu.gd" id="1_rlpab"]
+[ext_resource type="Texture2D" uid="uid://the6ira14x2m" path="res://Assets/UI Assets/shop_bg.png" id="2_kv4rj"]
+[ext_resource type="FontVariation" uid="uid://yo5ealhql1f1" path="res://Assets/Fonts/upheaval.tres" id="3_u2fcq"]
+[ext_resource type="PackedScene" uid="uid://d1movmrphs8ch" path="res://UI/options_menu.tscn" id="4_e0gwo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_j4hfu"]
+
+[node name="pause_menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_rlpab")
+
+[node name="options_menu" parent="." instance=ExtResource("4_e0gwo")]
+layout_mode = 1
+
+[node name="pause_menu_handler" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="pause_menu_handler"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0588235, 0.0588235, 0.0588235, 0.392157)
+
+[node name="NinePatchRect" type="NinePatchRect" parent="pause_menu_handler"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -228.0
+offset_top = -223.0
+offset_right = 232.0
+offset_bottom = 224.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_kv4rj")
+
+[node name="Options" type="Button" parent="pause_menu_handler"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -104.0
+offset_top = 4.0
+offset_right = 110.0
+offset_bottom = 58.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.588235, 0.588235, 0.588235, 1)
+theme_override_colors/font_hover_color = Color(0.588235, 0.588235, 0.588235, 1)
+theme_override_fonts/font = ExtResource("3_u2fcq")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/focus = SubResource("StyleBoxEmpty_j4hfu")
+action_mode = 0
+text = "Options"
+flat = true
+
+[node name="MainMenu" type="Button" parent="pause_menu_handler"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -128.0
+offset_top = -60.0
+offset_right = 146.0
+offset_bottom = -6.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.588235, 0.588235, 0.588235, 1)
+theme_override_colors/font_hover_color = Color(0.588235, 0.588235, 0.588235, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_u2fcq")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/focus = SubResource("StyleBoxEmpty_j4hfu")
+action_mode = 0
+text = "Main menu"
+flat = true
+
+[node name="Back" type="Button" parent="pause_menu_handler"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -64.0
+offset_top = 68.0
+offset_right = 67.0
+offset_bottom = 122.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.588235, 0.588235, 0.588235, 1)
+theme_override_colors/font_hover_color = Color(0.588235, 0.588235, 0.588235, 1)
+theme_override_fonts/font = ExtResource("3_u2fcq")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/focus = SubResource("StyleBoxEmpty_j4hfu")
+action_mode = 0
+text = "back
+"
+flat = true
+
+[node name="Label" type="Label" parent="pause_menu_handler"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -180.0
+offset_top = -209.0
+offset_right = 180.0
+offset_bottom = -119.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_y = 11
+theme_override_constants/outline_size = 15
+theme_override_fonts/font = ExtResource("3_u2fcq")
+theme_override_font_sizes/font_size = 100
+text = "PAUSED"
+
+[connection signal="pressed" from="pause_menu_handler/Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="pause_menu_handler/MainMenu" to="." method="_on_main_menu_pressed"]
+[connection signal="pressed" from="pause_menu_handler/Back" to="." method="_on_back_pressed"]

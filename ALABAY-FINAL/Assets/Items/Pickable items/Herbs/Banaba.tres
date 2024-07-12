@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="InvItem" load_steps=3 format=3 uid="uid://crbhpvjqq7xpr"]
+
+[ext_resource type="Script" path="res://Player/Inventory/inventory_item.gd" id="1_4hhu7"]
+[ext_resource type="Texture2D" uid="uid://dskhib6mgp65x" path="res://Assets/Items/Herbs/banaba.png" id="2_jdme8"]
+
+[resource]
+script = ExtResource("1_4hhu7")
+name = "Banaba"
+texture = ExtResource("2_jdme8")

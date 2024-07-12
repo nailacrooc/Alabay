@@ -1,0 +1,79 @@
+[gd_scene load_steps=8 format=3 uid="uid://dnprymeyld3om"]
+
+[ext_resource type="Script" path="res://World/light.gd" id="1_ds0d5"]
+
+[sub_resource type="Gradient" id="Gradient_ftpep"]
+offsets = PackedFloat32Array(0, 0.37013, 1)
+colors = PackedColorArray(1, 1, 1, 1, 0.519481, 0.519481, 0.519481, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_btf8h"]
+gradient = SubResource("Gradient_ftpep")
+fill = 1
+fill_from = Vector2(0.495413, 0.486239)
+fill_to = Vector2(0.784404, 0.12844)
+
+[sub_resource type="Animation" id="Animation_gjpl6"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_j8s4c"]
+resource_name = "off_light"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_dfkye"]
+resource_name = "on_light"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_r5178"]
+_data = {
+"RESET": SubResource("Animation_gjpl6"),
+"off_light": SubResource("Animation_j8s4c"),
+"on_light": SubResource("Animation_dfkye")
+}
+
+[node name="Light" type="PointLight2D"]
+z_index = 11
+color = Color(1, 1, 1, 0)
+energy = 3.0
+texture = SubResource("GradientTexture2D_btf8h")
+script = ExtResource("1_ds0d5")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_r5178")
+}

@@ -1,0 +1,39 @@
+[gd_scene load_steps=6 format=3 uid="uid://bm8r5n1y1eyp2"]
+
+[ext_resource type="Script" path="res://World/Objects/Plants/watering_can.gd" id="1_75vyu"]
+[ext_resource type="Texture2D" uid="uid://b6l3w6dh57aij" path="res://Assets/Watering Can.png" id="1_qk6h7"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eu7bk"]
+atlas = ExtResource("1_qk6h7")
+region = Rect2(0, 0, 85, 85)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7rcvt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eu7bk")
+}],
+"loop": true,
+"name": &"watering_can",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_n4nct"]
+radius = 21.0238
+
+[node name="watering_can" type="StaticBody2D"]
+scale = Vector2(0.2, 0.2)
+script = ExtResource("1_75vyu")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-7, -4)
+sprite_frames = SubResource("SpriteFrames_7rcvt")
+animation = &"watering_can"
+
+[node name="watering_can" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="watering_can"]
+shape = SubResource("CircleShape2D_n4nct")
+
+[connection signal="area_entered" from="watering_can" to="." method="_on_area_2d_area_entered"]
+[connection signal="input_event" from="watering_can" to="." method="_on_area_2d_input_event"]

@@ -1,0 +1,40 @@
+[gd_scene load_steps=4 format=3 uid="uid://d0j3lqskibbme"]
+
+[ext_resource type="Script" path="res://Player/Inventory/inv_ui_slot.gd" id="1_2g4xr"]
+[ext_resource type="Texture2D" uid="uid://bts7e7miuds3p" path="res://Assets/UI Assets/Inventory_block_ui.png" id="1_jlp3x"]
+[ext_resource type="FontFile" uid="uid://c2fe063latqy4" path="res://Assets/Fonts/Minecraftia-Regular.ttf" id="3_f3okg"]
+
+[node name="inv_UI_slot" type="Panel"]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(26, 28)
+offset_right = 26.0
+offset_bottom = 28.0
+script = ExtResource("1_2g4xr")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_jlp3x")
+centered = false
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+custom_minimum_size = Vector2(26, 28)
+layout_mode = 0
+offset_right = 26.0
+offset_bottom = 28.0
+
+[node name="Panel" type="Panel" parent="CenterContainer"]
+layout_mode = 2
+
+[node name="item_display" type="Sprite2D" parent="CenterContainer/Panel"]
+position = Vector2(0, -1)
+
+[node name="item_count" type="Label" parent="CenterContainer/Panel"]
+custom_minimum_size = Vector2(19, 23)
+layout_mode = 0
+offset_left = -2.0
+offset_top = -1.0
+offset_right = 22.0
+offset_bottom = 27.0
+scale = Vector2(0.5, 0.5)
+theme_override_fonts/font = ExtResource("3_f3okg")
+text = "99"
+horizontal_alignment = 2

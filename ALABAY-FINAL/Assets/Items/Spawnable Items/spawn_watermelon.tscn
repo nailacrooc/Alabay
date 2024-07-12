@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://dqah8v8h4syw2"]
+
+[ext_resource type="Script" path="res://Assets/Items/Spawnable Items/spawn_watermelon.gd" id="1_hbmw6"]
+
+[node name="spawn_watermelon" type="Node2D"]
+script = ExtResource("1_hbmw6")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 120.0
+autostart = true
+
+[node name="spawn_area" type="ReferenceRect" parent="."]
+offset_right = 64.0
+offset_bottom = 64.0
+
+[node name="watermelon_spawn" type="Node2D" parent="."]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

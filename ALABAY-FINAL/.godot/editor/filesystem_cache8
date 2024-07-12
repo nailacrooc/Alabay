@@ -1,0 +1,321 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1719912301
+default_env.tres::Environment::2028116820456761782::1719911931::0::1::::<><>::
+global.gd::GDScript::-1::1719911930::0::1::::<>Node<>::
+::res://Assets/::1719896375
+::res://Assets/Character Assets/::1719896497
+char.png::CompressedTexture2D::33028041223386746::1719236290::1719645505::1::::<><>::
+creme_0.png::CompressedTexture2D::3448050064458600810::1664103398::1719645512::1::::<><>::
+Kapre.png::CompressedTexture2D::619109332924951825::1719236308::1719896497::1::::<><>::
+player.png::CompressedTexture2D::8489796749888570949::1719236290::1719645512::1::::<><>::
+::res://Assets/Fonts/::1719896453
+mcpe_font.tres::FontVariation::5484221490888938618::1719236290::0::1::::<><>::uid://c2fe063latqy4::::res://Assets/Fonts/Minecraftia-Regular.ttf
+Minecraftia-Regular.ttf::FontFile::6678551219180997509::1719236290::1719236290::1::::<><>::
+readme.txt::TextFile::-1::1719236290::0::1::::<><>::
+upheaval.tres::FontVariation::1715262206160968100::1719236290::0::1::::<><>::uid://bjqcvdtqk61qo::::res://Assets/Fonts/upheavtt.ttf
+upheaval.txt::TextFile::-1::1719236290::0::1::::<><>::
+upheavtt.ttf::FontFile::3051309443820798190::1719236290::1719236290::1::::<><>::
+::res://Assets/guides/::1719236290
+animations, page 1.png::CompressedTexture2D::2796419534350649873::1719236290::1719236290::1::::<><>::
+paper doll demonstration.png::CompressedTexture2D::7882243581221743861::1719236290::1719236290::1::::<><>::
+using this base.txt::TextFile::-1::1719236290::0::1::::<><>::
+::res://Assets/guides/timing sample gifs/::1719236290
+::res://Assets/Items/::1719236292
+Watering Can.png::CompressedTexture2D::4586723988247794969::1719236290::1719236292::1::::<><>::
+::res://Assets/Items/Fruits/::1719236292
+Apple.png::CompressedTexture2D::245101895547646205::1719236292::1719236292::1::::<><>::
+Banana.png::CompressedTexture2D::4155966739304379034::1719236292::1719236292::1::::<><>::
+Bayabas.png::CompressedTexture2D::6620876722026410168::1719236292::1719236292::1::::<><>::
+Calamansi.png::CompressedTexture2D::1758056194518391214::1719236292::1719236292::1::::<><>::
+Chico.png::CompressedTexture2D::3004081252022439013::1719236292::1719236292::1::::<><>::
+coconut.png::CompressedTexture2D::4412840699406812954::1719236292::1719236292::1::::<><>::
+Lemon.png::CompressedTexture2D::3927364634268163996::1719236292::1719236292::1::::<><>::
+Rambutan.png::CompressedTexture2D::1345820143472046296::1719236292::1719236292::1::::<><>::
+Watermelon.png::CompressedTexture2D::2092084598650235562::1719236292::1719236292::1::::<><>::
+::res://Assets/Items/Herbs/::1719236292
+banaba.png::CompressedTexture2D::8443744420371244839::1719236292::1719236292::1::::<><>::
+lagundi.png::CompressedTexture2D::1261056368963091457::1719236292::1719236292::1::::<><>::
+sambong.png::CompressedTexture2D::1246854820934563194::1719236292::1719236292::1::::<><>::
+tawa-tawa.png::CompressedTexture2D::3321134769979758678::1719236292::1719236292::1::::<><>::
+::res://Assets/Items/Pickable items/::1719236292
+pickable.gd::GDScript::-1::1719236292::0::1::::<>Area2D<>::
+::res://Assets/Items/Pickable items/Fruits/::1719911889
+Apple.tres::Resource/Resource::1657231594007759316::1719236292::0::1::::<><>::res://Player/Inventory/inventory_item.gd<>uid://dqy17a41228x::::res://Assets/Items/Apple.png
+Banana.tres::Resource/Resource::8937139821907805383::1719236292::0::1::::<><>::res://Player/Inventory/inventory_item.gd<>uid://b0hgfu0id8u0a::::res://Assets/Items/Banana.png
+Bayabas.tres::Resource/Resource::1481722726044024648::1719236292::0::1::::<><>::res://Player/Inventory/inventory_item.gd<>uid://c1lg4wmp758gy::::res://Assets/Items/Bayabas.png
+Calamansi.tres::Resource/Resource::7556687072925345247::1719236292::0::1::::<><>::res://Player/Inventory/inventory_item.gd<>uid://0bu6tsne0rni::::res://Assets/Items/Calamansi.png
+Chico.tres::Resource/Resource::2057167588388506847::1719236292::0::1::::<><>::res://Player/Inventory/inventory_item.gd<>uid://bi2g1q5mdjobt::::res://Assets/Items/Chico.png
+coconut.tres::Resource/Resource::5002735716917965203::1719236292::0::1::::<><>::res://Player/Inventory/inventory_item.gd<>uid://b34u3u5b42q5w::::res://Assets/Items/Fruits/coconut.png
+Lemon.tres::Resource/Resource::6066344043675395376::1719236292::0::1::::<><>::res://Player/Inventory/inventory_item.gd<>uid://bv7peeyr3vbxc::::res://Assets/Items/Fruits/Lemon.png
+pickable_apple.tscn::PackedScene::7999380544933254142::1719236292::0::1::::<><>::res://Assets/Items/Pickable items/pickable.gd<>uid://dqy17a41228x::::res://Assets/Items/Fruits/Apple.png<>uid://xu1mk0bkp2we::::res://Assets/Items/Pickable items/Fruits/Apple.tres
+pickable_banana.tscn::PackedScene::1481615309483125144::1719911889::0::1::::<><>::res://Assets/Items/Pickable items/pickable.gd<>uid://d0lhnfr6tpb80::::res://Assets/Items/Pickable items/Fruits/Banana.tres<>uid://b0hgfu0id8u0a::::res://Assets/Items/Fruits/Banana.png<>uid://ckeuldwvf8rq5::::res://Assets/Fonts/mcpe_font.tres<>uid://dk4e1it18a2ng::::res://Music/pickup_sfx.wav
+pickable_bayabas.tscn::PackedScene::5475168379656057321::1719236292::0::1::::<><>::res://Assets/Items/Pickable items/pickable.gd<>uid://vd00y444g3o3::::res://Assets/Items/Pickable items/Fruits/Bayabas.tres<>uid://c1lg4wmp758gy::::res://Assets/Items/Fruits/Bayabas.png<>uid://ckeuldwvf8rq5::::res://Assets/Fonts/mcpe_font.tres<>uid://dk4e1it18a2ng::::res://Music/pickup_sfx.wav
+pickable_calamansi.tscn::PackedScene::5860007664895523464::1719236292::0::1::::<><>::res://Assets/Items/Pickable items/pickable.gd<>uid://dfwrsdbri8b8r::::res://Assets/Items/Pickable items/Fruits/Calamansi.tres<>uid://0bu6tsne0rni::::res://Assets/Items/Fruits/Calamansi.png<>uid://ckeuldwvf8rq5::::res://Assets/Fonts/mcpe_font.tres<>uid://dk4e1it18a2ng::::res://Music/pickup_sfx.wav
+pickable_chico.tscn::PackedScene::6194925367322521425::1719236292::0::1::::<><>::res://Assets/Items/Pickable items/pickable.gd<>uid://4kriqtivg3bn::::res://Assets/Items/Pickable items/Fruits/Chico.tres<>uid://bi2g1q5mdjobt::::res://Assets/Items/Fruits/Chico.png<>uid://ckeuldwvf8rq5::::res://Assets/Fonts/mcpe_font.tres<>uid://dk4e1it18a2ng::::res://Music/pickup_sfx.wav
+pickable_lemon.tscn::PackedScene::5212713412106327421::1719645187::0::1::::<><>::res://Assets/Items/Pickable items/pickable.gd<>uid://csot2g57ixouy::::res://Assets/Items/Pickable items/Fruits/Lemon.tres<>uid://bv7peeyr3vbxc::::res://Assets/Items/Fruits/Lemon.png<>uid://ckeuldwvf8rq5::::res://Assets/Fonts/mcpe_font.tres<>uid://dk4e1it18a2ng::::res://Music/pickup_sfx.wav
+pickable_rambutan.tscn::PackedScene::3493463659149426269::1719236292::0::1::::<><>::res://Assets/Items/Pickable items/pickable.gd<>uid://07jd517wtxs1::::res://Assets/Items/Pickable items/Fruits/Rambutan.tres<>uid://tf6pxcq52pv1::::res://Assets/Items/Fruits/Rambutan.png<>uid://ckeuldwvf8rq5::::res://Assets/Fonts/mcpe_font.tres<>uid://dk4e1it18a2ng::::res://Music/pickup_sfx.wav
+pickable_watermelon.tscn::PackedScene::4716148970125591003::1719236292::0::1::::<><>::res://Assets/Items/Pickable items/pickable.gd<>uid://fox4dgf3mrs1::::res://Assets/Items/Pickable items/Fruits/Watermelon.tres<>uid://42ole2h1cgb7::::res://Assets/Items/Fruits/Watermelon.png<>uid://ckeuldwvf8rq5::::res://Assets/Fonts/mcpe_font.tres<>uid://dk4e1it18a2ng::::res://Music/pickup_sfx.wav
+Rambutan.tres::Resource/Resource::1821334606746861394::1719236292::0::1::::<><>::res://Player/Inventory/inventory_item.gd<>uid://tf6pxcq52pv1::::res://Assets/Items/Rambutan.png
+Watermelon.tres::Resource/Resource::381293952707832834::1719236292::0::1::::<><>::res://Player/Inventory/inventory_item.gd<>uid://42ole2h1cgb7::::res://Assets/Items/Watermelon.png
+::res://Assets/Items/Pickable items/Herbs/::1719907478
+Banaba.tres::Resource/Resource::5968569010487976875::1719236292::0::1::::<><>::res://Player/Inventory/inventory_item.gd<>uid://dskhib6mgp65x::::res://Assets/Items/Herbs/banaba.png
+Lagundi.tres::Resource/Resource::2624582289561576546::1719236292::0::1::::<><>::res://Player/Inventory/inventory_item.gd<>uid://r74oc06e2opt::::res://Assets/Items/Herbs/lagundi.png
+pickable_banaba.tscn::PackedScene::6607871143449674300::1719907478::0::1::::<><>::res://Assets/Items/Pickable items/pickable.gd<>uid://crbhpvjqq7xpr::::res://Assets/Items/Pickable items/Herbs/Banaba.tres<>uid://dskhib6mgp65x::::res://Assets/Items/Herbs/banaba.png<>uid://ckeuldwvf8rq5::::res://Assets/Fonts/mcpe_font.tres<>uid://dk4e1it18a2ng::::res://Music/pickup_sfx.wav
+pickable_lagundi.tscn::PackedScene::3297108461389713654::1719646811::0::1::::<><>::res://Assets/Items/Pickable items/pickable.gd<>uid://bdnmqs2i60ju5::::res://Assets/Items/Pickable items/Herbs/Lagundi.tres<>uid://r74oc06e2opt::::res://Assets/Items/Herbs/lagundi.png<>uid://ckeuldwvf8rq5::::res://Assets/Fonts/mcpe_font.tres<>uid://dk4e1it18a2ng::::res://Music/pickup_sfx.wav
+pickable_sambong.tscn::PackedScene::4437965321979881290::1719647089::0::1::::<><>::res://Assets/Items/Pickable items/pickable.gd<>uid://bwn45jgxbxksb::::res://Assets/Items/Pickable items/Herbs/Sambong.tres<>uid://r08rtlw687s5::::res://Assets/Items/Herbs/sambong.png<>uid://ckeuldwvf8rq5::::res://Assets/Fonts/mcpe_font.tres<>uid://dk4e1it18a2ng::::res://Music/pickup_sfx.wav
+pickable_tawa-tawa.tscn::PackedScene::8215707221789968380::1719647122::0::1::::<><>::res://Assets/Items/Pickable items/pickable.gd<>uid://b1qdqkdntcv4u::::res://Assets/Items/Pickable items/Herbs/Tawa-Tawa.tres<>uid://bnk1usy24mto5::::res://Assets/Items/Herbs/tawa-tawa.png<>uid://ckeuldwvf8rq5::::res://Assets/Fonts/mcpe_font.tres<>uid://dk4e1it18a2ng::::res://Music/pickup_sfx.wav
+Sambong.tres::Resource/Resource::3959227004166209973::1719236292::0::1::::<><>::res://Player/Inventory/inventory_item.gd<>uid://r08rtlw687s5::::res://Assets/Items/Herbs/sambong.png
+Tawa-Tawa.tres::Resource/Resource::4244571916511746658::1719236292::0::1::::<><>::res://Player/Inventory/inventory_item.gd<>uid://bnk1usy24mto5::::res://Assets/Items/Herbs/tawa-tawa.png
+::res://Assets/Items/Spawnable Items/::1719907478
+spawn_banana.gd::GDScript::-1::1719236292::0::1::::<>Node2D<>::
+spawn_banana.tscn::PackedScene::3148521613415926478::1719907478::0::1::::<><>::res://Assets/Items/Spawnable Items/spawn_banana.gd
+spawn_bayabas.gd::GDScript::-1::1719236292::0::1::::<>Node2D<>::
+spawn_bayabas.tscn::PackedScene::2262398882569657500::1719236292::0::1::::<><>::res://Assets/Items/Spawnable Items/spawn_bayabas.gd
+spawn_calamansi.gd::GDScript::-1::1719236292::0::1::::<>Node2D<>::
+spawn_calamansi.tscn::PackedScene::1189554974936826442::1719236292::0::1::::<><>::res://Assets/Items/Spawnable Items/spawn_calamansi.gd
+spawn_chico.gd::GDScript::-1::1719236292::0::1::::<>Node2D<>::
+spawn_chico.tscn::PackedScene::9044211112249313652::1719236292::0::1::::<><>::res://Assets/Items/Spawnable Items/spawn_chico.gd
+spawn_lemon.gd::GDScript::-1::1719236292::0::1::::<>Node2D<>::
+spawn_lemon.tscn::PackedScene::1403680418429764861::1719236292::0::1::::<><>::res://Assets/Items/Spawnable Items/spawn_lemon.gd
+spawn_rambutan.gd::GDScript::-1::1719236292::0::1::::<>Node2D<>::
+spawn_rambutan.tscn::PackedScene::8117144108330511063::1719236292::0::1::::<><>::res://Assets/Items/Spawnable Items/spawn_rambutan.gd
+spawn_watermelon.gd::GDScript::-1::1719236292::0::1::::<>Node2D<>::
+spawn_watermelon.tscn::PackedScene::8282768653762484583::1719236292::0::1::::<><>::res://Assets/Items/Spawnable Items/spawn_watermelon.gd
+::res://Assets/maps/::1719645538
+assets.png::CompressedTexture2D::7781286232524949786::1719236300::1719645538::1::::<><>::
+assets_basic.png::CompressedTexture2D::5069740819434455118::1719236300::1719645538::1::::<><>::
+assets_spritesheet_v2_free.png::CompressedTexture2D::2891486465726045956::1719236300::1719645538::1::::<><>::
+beach_tiles.png::CompressedTexture2D::6245010998332450338::1719236300::1719645538::1::::<><>::
+coconut.png::CompressedTexture2D::1529787154086844450::1719236300::1719645538::1::::<><>::
+decorations.png::CompressedTexture2D::2287037339187845488::1719236302::1719645538::1::::<><>::
+dirt.png::CompressedTexture2D::242778275850644070::1719236302::1719645538::1::::<><>::
+dirtpath_tiles.png::CompressedTexture2D::9205884159443072883::1719236302::1719645538::1::::<><>::
+farm bridges free.png::CompressedTexture2D::4527427272499115823::1719236302::1719645538::1::::<><>::
+farm inside free.png::CompressedTexture2D::8421254465986633502::1719236302::1719645538::1::::<><>::
+farm objects free.png::CompressedTexture2D::6511039006926315182::1719236302::1719645538::1::::<><>::
+fence.png::CompressedTexture2D::7450896902791031518::1719236302::1719645538::1::::<><>::
+fence_tiles.png::CompressedTexture2D::3022872573999951922::1719236302::1719645538::1::::<><>::
+floor.png::CompressedTexture2D::1420306569259677331::1719236302::1719645538::1::::<><>::
+fruit trees.png::CompressedTexture2D::8689186210404829030::1719236302::1719645538::1::::<><>::
+fruits-trees.png::CompressedTexture2D::1173723477827419507::1719236302::1719645538::1::::<><>::
+furniture free.png::CompressedTexture2D::5165990013790589787::1719236302::1719645537::1::::<><>::
+grasses.png::CompressedTexture2D::1499946880388012478::1719236302::1719645537::1::::<><>::
+ground_decorations.png::CompressedTexture2D::3852809556157602435::1719236302::1719645537::1::::<><>::
+house.png::CompressedTexture2D::4785676910139430761::1719236302::1719645537::1::::<><>::
+hut.png::CompressedTexture2D::6672377349524600855::1719236290::1719645537::1::::<><>::
+island.png::CompressedTexture2D::720882353931734925::1719236302::1719645537::1::::<><>::
+items free.png::CompressedTexture2D::2605774330264434366::1719236302::1719645537::1::::<><>::
+plants free.png::CompressedTexture2D::7017804253652824650::1719236302::1719645537::1::::<><>::
+rope_fence_tiles.png::CompressedTexture2D::2331969643594576593::1719236302::1719645537::1::::<><>::
+spring farm tilemap.png::CompressedTexture2D::1429034692811893974::1719236302::1719645537::1::::<><>::
+terrain_tiles_v2.png::CompressedTexture2D::2044298000038226398::1719236302::1719645537::1::::<><>::
+tilesheet_basic.png::CompressedTexture2D::6207688458353006884::1719236252::1719645537::1::::<><>::
+water_and_island_tiles_v2.png::CompressedTexture2D::8403377431674033225::1719236302::1719645537::1::::<><>::
+::res://Assets/Others/::1719912409
+daynightcycle-gradient-texture.tres::GradientTexture1D::3119443190732880559::1719236290::0::1::::<><>::
+night.png::CompressedTexture2D::1782241674593707093::1719912409::1719912411::1::::<><>::
+Screen_Title.png::CompressedTexture2D::5800162413570059486::1719236290::1719645562::1::::<><>::
+::res://Assets/UI Assets/::1719848979
+gold_coin.png::CompressedTexture2D::7222695155794582306::1719848977::1719848979::1::::<><>::
+Inventory_block_background.png::CompressedTexture2D::2202442248534057064::1719236308::1719645441::1::::<><>::
+Inventory_block_bg.png::CompressedTexture2D::1994074536319024585::1719236308::1719645441::1::::<><>::
+Inventory_block_ui.png::CompressedTexture2D::3759119299008146151::1719236308::1719645441::1::::<><>::
+inv_bg.png::CompressedTexture2D::2005576421569240072::1719236308::1719645441::1::::<><>::
+inv_ui_small.png::CompressedTexture2D::4604925421560177473::1719236308::1719645441::1::::<><>::
+left_arrow.png::CompressedTexture2D::64303255815561877::1719844921::1719844922::1::::<><>::
+pause_btn.png::CompressedTexture2D::8609519575680125852::1719236290::1719645456::1::::<><>::
+Questboard.png::CompressedTexture2D::517073879173177389::1719236308::1719645441::1::::<><>::
+right_arrow.png::CompressedTexture2D::8302156487138894933::1719845302::1719845304::1::::<><>::
+shop_bg.png::CompressedTexture2D::1348337347467539654::1719236308::1719645441::1::::<><>::
+shop_bg_white.png::CompressedTexture2D::4309262092953111500::1719236308::1719645441::1::::<><>::
+::res://Characters/::1719896496
+cats.gd::GDScript::-1::1719241710::0::1::::<>CharacterBody2D<>::
+cats.tscn::PackedScene::2552525519455134069::1719645510::0::1::::<><>::uid://bpei47g1maljm::::res://Assets/Character Assets/creme_0.png<>res://Characters/cats.gd<>res://Characters/cat_tips.tscn<>uid://ckeuldwvf8rq5::::res://Assets/Fonts/mcpe_font.tres
+cat_tips.gd::GDScript::-1::1719241851::0::1::::<>Control<>::
+cat_tips.tscn::PackedScene::-1::1719242018::0::1::::<><>::
+monster.gd::GDScript::-1::1719236294::0::1::::<>Node2D<>::
+monster.tscn::PackedScene::7605376292520613869::1719896496::0::1::::<><>::uid://i25v1e131ajp::::res://Assets/Character Assets/Kapre.png<>res://Characters/monster.gd
+npc.gd::GDScript::-1::1719236294::0::1::::<>CharacterBody2D<>::
+npc.tscn::PackedScene::8522941161758371720::1719645503::0::1::::<><>::uid://p8744q7ayry::::res://Assets/Character Assets/char.png<>res://Characters/npc.gd<>uid://rhb6s5wxkfuj::::res://Quests/npc_quest.tscn<>uid://ckeuldwvf8rq5::::res://Assets/Fonts/mcpe_font.tres
+spawn_monsters.gd::GDScript::-1::1719665107::0::1::::<>Node2D<>::
+spawn_monsters.tscn::PackedScene::2764412397407929444::1719850432::0::1::::<><>::res://Characters/spawn_monsters.gd
+::res://Day And Night/::1719236300
+::res://Day And Night/assets/::1719911178
+creepy-soundscape.ogg::AudioStreamOggVorbis::763025885756141293::1719236300::1719236300::1::::<><>::
+daynightcycle-gradient-texture.tres::GradientTexture1D::3119443190732880559::1719911178::0::1::::<><>::
+daynightcycle-ui.png::CompressedTexture2D::4481525667904144898::1719236300::1719236300::1::::<><>::
+howlingwolf.ogg::AudioStreamOggVorbis::3059146321664965506::1719236300::1719236300::1::::<><>::
+morningcrow.ogg::AudioStreamOggVorbis::7141800913198801316::1719236300::1719236300::1::::<><>::
+nature-soundscape.ogg::AudioStreamOggVorbis::8424085690204458044::1719236300::1719236300::1::::<><>::
+pixelperfect.gdshader::Shader::-1::1719236300::0::1::::<><>::
+rpg-tileset.png::CompressedTexture2D::3721033785882604043::1719236300::1719236300::1::::<><>::
+rpg-tileset.tres::TileSet::6637676765781144878::1719236300::0::1::::<><>::
+::res://Day And Night/assets/fonts/::1719236300
+::res://Day And Night/assets/fonts/pixelmix/::1719236300
+license.txt::TextFile::-1::1719236300::0::1::::<><>::
+pixelmix.ttf::FontFile::8557395108056639862::1719236300::1719236300::1::::<><>::
+::res://Day And Night/day-night-cycle/::1719236300
+::res://Day And Night/day-night-cycle/demo/::1719660782
+camera_movement.gd::GDScript::-1::1719236300::0::1::::<>Camera2D<>::
+daynightcycle.gd::GDScript::-1::1719660782::0::1::::<>CanvasModulate<>::
+daynightcycle_scene.gd::GDScript::-1::1719236300::0::1::::<>Node2D<>::
+daynightcycle_scene.tscn::PackedScene::5433421688772706682::1719236300::0::1::::<><>::res://Day And Night/day-night-cycle/demo/daynightcycle_scene.gd<>uid://bg27ojx5244u6::::res://Day And Night/day-night-cycle/demo/audio/sound_machine.tscn<>res://Day And Night/assets/pixelperfect.gdshader<>uid://de7sk8el7b2vw::::res://Day And Night/assets/tilemaps/overworld_tileset_grass.png<>uid://7ywh575y7xr0::::res://Day And Night/assets/tilemaps/city-life.png<>res://Day And Night/day-night-cycle/demo/camera_movement.gd<>res://Day And Night/day-night-cycle/demo/daynightcycle.gd<>uid://bkpc1kjm4t2xn::::res://Day And Night/assets/daynightcycle-gradient-texture.tres<>uid://ceolcwatpaicu::::res://Day And Night/day-night-cycle/demo/ui/daynightcycle_ui.tscn
+::res://Day And Night/day-night-cycle/demo/audio/::1719236300
+sound_machine.gd::GDScript::-1::1719236300::0::1::::<>Node<>::
+sound_machine.tscn::PackedScene::2865260399405075411::1719236300::0::1::::<><>::res://day-night-cycle/demo/audio/sound_machine.gd<>uid://c80sog00tcewi::::res://assets/morningcrow.ogg<>uid://bjt4xtcsa8a3c::::res://assets/howlingwolf.ogg<>uid://dsaxpwngwfaye::::res://assets/nature-soundscape.ogg<>uid://k4u6pewjp7e4::::res://assets/creepy-soundscape.ogg
+::res://Day And Night/day-night-cycle/demo/ui/::1719664837
+daynightcycle_ui.gd::GDScript::-1::1719660346::0::1::::<>Control<>::
+daynightcycle_ui.tscn::PackedScene::5083170645400440008::1719664837::0::1::::<><>::res://Day And Night/day-night-cycle/demo/ui/daynightcycle_ui.gd<>res://Day And Night/assets/pixelperfect.gdshader<>uid://dt6jbuskqvs7g::::res://Day And Night/assets/fonts/pixelmix/pixelmix.ttf<>uid://b435cqm35cj4u::::res://Day And Night/assets/daynightcycle-ui.png
+::res://Music/::1719236302
+AudioStreamPlayer.gd::GDScript::-1::1719236302::0::1::::<>AudioStreamPlayer<>::
+audio_stream_player.tscn::PackedScene::444482896762877895::1719236302::0::1::::<><>::res://Music/AudioStreamPlayer.gd<>uid://hoohc2g24la::::res://Music/Background_Music/In the Deep Woods.wav
+pickup_sfx.wav::AudioStreamWAV::7921307191703490492::1719236302::1719236302::1::::<><>::
+Running SFX.mp3::AudioStreamMP3::8581865528481400028::1719236302::1719236302::1::::<><>::
+::res://Music/Background_Music/::1719236302
+Dance of the Moonlight.wav::AudioStreamWAV::2550110595901279311::1719236302::1719236302::1::::<><>::
+In the Deep Woods.wav::AudioStreamWAV::15326055280746882::1719236302::1719236302::1::::<><>::
+::res://Player/::1719911888
+followcam.gd::GDScript::-1::1719236302::0::1::::<>Camera2D<>::
+Player2.tscn::PackedScene::2093946164969919606::1719236302::0::1::::<><>::res://Player/Player.gd<>res://Tiny Wonder Farm Free/characters/main character/walk and idle.png
+Player.gd::GDScript::-1::1719236302::0::1::::my_player<>CharacterBody2D<>::
+Player.tscn::PackedScene::4614318579119107129::1719911888::0::1::::<><>::res://Player/Player.gd<>uid://ds7ryhghkisq4::::res://Assets/Character Assets/player.png<>uid://bhi1e8bsqookj::::res://Player/Inventory/playerinv.tres<>uid://dujecotnul085::::res://Music/Running SFX.mp3
+::res://Player/Inventory/::1719911178
+inventory.gd::GDScript::-1::1719236302::0::1::::Inv<>Resource<>::
+inventory_item.gd::GDScript::-1::1719236302::0::1::::InvItem<>Resource<>::
+Inv_slot.gd::GDScript::-1::1719911178::0::1::::InvSlot<>Resource<>::
+Inv_UI.gd::GDScript::-1::1719911178::0::1::::<>Control<>::
+inv_ui.tscn::PackedScene::1073020462442549471::1719645440::0::1::::<><>::res://Player/Inventory/Inv_UI.gd<>uid://the6ira14x2m::::res://Assets/UI Assets/shop_bg.png<>uid://d0j3lqskibbme::::res://Player/Inventory/inv_ui_slot.tscn
+inv_ui_slot.gd::GDScript::-1::1719911178::0::1::::inv_ui<>Panel<>::
+inv_ui_slot.tscn::PackedScene::8934283129992233192::1719645440::0::1::::<><>::res://Player/Inventory/inv_ui_slot.gd<>uid://bts7e7miuds3p::::res://Assets/UI Assets/Inventory_block_ui.png<>uid://c2fe063latqy4::::res://Assets/Fonts/Minecraftia-Regular.ttf
+inv_ui_small.gd::GDScript::-1::1719236302::0::1::::<>Control<>::
+inv_ui_small.tscn::PackedScene::8781378570863827397::1719645440::0::1::::<><>::res://Player/Inventory/inv_ui_small.gd<>uid://b6uwpi61ajyxl::::res://Assets/UI Assets/inv_ui_small.png<>uid://d0j3lqskibbme::::res://Player/Inventory/inv_ui_slot.tscn
+playerinv.tres::Resource/Inv::2895845131834498565::1719911178::0::1::::<><>::res://Player/Inventory/Inv_slot.gd<>res://Player/Inventory/inventory.gd
+watering_can.tres::Resource/Resource::5190544134459716127::1719236302::0::1::::<><>::res://Player/Inventory/inventory_item.gd<>uid://b6l3w6dh57aij::::res://Assets/Watering Can.png
+::res://Quests/::1719911888
+npc_quest.gd::GDScript::-1::1719908354::0::1::::<>Control<>::
+npc_quest.tscn::PackedScene::1207778055523936837::1719911888::0::1::::<><>::res://Quests/npc_quest.gd<>uid://hmqepyo2pwg8::::res://Assets/UI Assets/Questboard.png<>uid://ckeuldwvf8rq5::::res://Assets/Fonts/mcpe_font.tres
+::res://RecipeBook/::1719911885
+Allergy.gd::GDScript::-1::1719236304::0::1::::<>Sprite2D<>::
+Asthma.gd::GDScript::-1::1719911774::0::1::::<>Sprite2D<>::
+Balisawsaw.gd::GDScript::-1::1719911790::0::1::::<>Sprite2D<>::
+Bato-balani.gd::GDScript::-1::1719236304::0::1::::<>Sprite2D<>::
+Dengue.gd::GDScript::-1::1719911796::0::1::::<>Sprite2D<>::
+Fever.gd::GDScript::-1::1719911801::0::1::::<>Sprite2D<>::
+FishSkin(tilapia).gd::GDScript::-1::1719236304::0::1::::<>Sprite2D<>::
+Headache.gd::GDScript::-1::1719911808::0::1::::<>Sprite2D<>::
+High-blood.gd::GDScript::-1::1719911814::0::1::::<>Sprite2D<>::
+Insomnia2.gd::GDScript::-1::1719911820::0::1::::<>Sprite2D<>::
+Minecraftia-Regular.ttf::FontFile::3285370496684807591::1719236304::1719236304::1::::<><>::
+Pagsusuka.gd::GDScript::-1::1719911825::0::1::::<>Sprite2D<>::
+Pamamantal.gd::GDScript::-1::1719911829::0::1::::<>Sprite2D<>::
+Pananakit ng Kasu-kasuan.gd::GDScript::-1::1719911833::0::1::::<>Sprite2D<>::
+Pananakit ng Tiyan.gd::GDScript::-1::1719911837::0::1::::<>Sprite2D<>::
+PananakitNgTiyan.gd::GDScript::-1::1719911841::0::1::::<>Sprite2D<>::
+Pilay.gd::GDScript::-1::1719911847::0::1::::<>Sprite2D<>::
+recipe book.png::CompressedTexture2D::699764235927517293::1719236304::1719236304::1::::<><>::
+RecipeBook.gd::GDScript::-1::1719236304::0::1::::<>Control<>::
+RecipeBook.tscn::PackedScene::9095594705932558677::1719645187::0::1::::<><>::res://RecipeBook/RecipeBook.gd<>uid://j78ara50pfxd::::res://RecipeBook/recipe book.png<>uid://ct26wbo8u6jer::::res://RecipeBook/potions/sorethroat.png<>res://RecipeBook/Sorethroat2.gd<>uid://b67njdarettlg::::res://RecipeBook/potions/wound.png<>uid://cqa4r0x0jis2h::::res://RecipeBook/potions/asthma.png<>res://RecipeBook/Wound.gd<>uid://dxinp14gv7y3o::::res://RecipeBook/potions/fever.png<>uid://dwav78aa6gg1i::::res://RecipeBook/potions/dengue.png<>res://RecipeBook/Asthma.gd<>uid://b2jmrlbxswdbt::::res://RecipeBook/potions/high-blood.png<>res://RecipeBook/Fever.gd<>uid://c28tntilmhwwd::::res://RecipeBook/potions/balisawsaw.png<>res://RecipeBook/Dengue.gd<>res://RecipeBook/High-blood.gd<>uid://c2fe063latqy4::::res://Assets/Fonts/Minecraftia-Regular.ttf<>res://RecipeBook/Balisawsaw.gd<>res://RecipeBook/Pagsusuka.gd<>res://RecipeBook/Headache.gd<>uid://b2inmqhpmo01a::::res://RecipeBook/ingredients/sambong.png<>uid://b8st0ysaiqmps::::res://RecipeBook/ingredients/tawa-tawa.png<>uid://thdbtgth7jp4::::res://RecipeBook/ingredients/tanglad.png<>uid://codfj1a65dcx8::::res://RecipeBook/ingredients/banaba.png<>uid://dskhib6mgp65x::::res://Assets/Items/Herbs/banaba.png<>res://RecipeBook/PananakitNgTiyan.gd<>uid://b0hgfu0id8u0a::::res://Assets/Items/Fruits/Banana.png<>uid://c07gcalm5swlr::::res://RecipeBook/potions/pananakit ng tiyan.png<>uid://bi2g1q5mdjobt::::res://Assets/Items/Fruits/Chico.png<>uid://r74oc06e2opt::::res://Assets/Items/Herbs/lagundi.png<>uid://br78nlm6cngoh::::res://RecipeBook/potions/pagsusuka.png<>uid://c1lg4wmp758gy::::res://Assets/Items/Fruits/Bayabas.png<>uid://c1iwdg7kpdu70::::res://RecipeBook/potions/headache.png<>uid://bv7peeyr3vbxc::::res://Assets/Items/Fruits/Lemon.png<>uid://42ole2h1cgb7::::res://Assets/Items/Fruits/Watermelon.png
+Sipon.gd::GDScript::-1::1719911877::0::1::::<>Sprite2D<>::
+Sorethroat2.gd::GDScript::-1::1719911881::0::1::::<>Sprite2D<>::
+Wound.gd::GDScript::-1::1719911885::0::1::::<>Sprite2D<>::
+::res://RecipeBook/aseprite files/::1719236304
+coconut-milk.png::CompressedTexture2D::6599230294303691280::1719236304::1719236304::1::::<><>::
+::res://RecipeBook/aseprite files/potions/::1719236304
+::res://RecipeBook/ingredients/::1719236306
+aloe_vera.png::CompressedTexture2D::3410961220519456363::1719236304::1719236304::1::::<><>::
+asin.png::CompressedTexture2D::368420661629182704::1719236306::1719236306::1::::<><>::
+banaba.png::CompressedTexture2D::5761999335745624207::1719236306::1719236306::1::::<><>::
+banana.png::CompressedTexture2D::3152088402965500149::1719236306::1719236306::1::::<><>::
+basil.png::CompressedTexture2D::6951578298095922195::1719236306::1719236306::1::::<><>::
+bato-balani.png::CompressedTexture2D::4264768689419795592::1719236306::1719236306::1::::<><>::
+bayabas.png::CompressedTexture2D::6181085164246674493::1719236306::1719236306::1::::<><>::
+bayabas_leaves.png::CompressedTexture2D::772603583465973648::1719236306::1719236306::1::::<><>::
+calamansi.png::CompressedTexture2D::1655650472327023268::1719236306::1719236306::1::::<><>::
+camphor.png::CompressedTexture2D::8712256607011236953::1719236306::1719236306::1::::<><>::
+charcoal.png::CompressedTexture2D::5177410341669850242::1719236306::1719236306::1::::<><>::
+chico.png::CompressedTexture2D::2062339429902176362::1719236306::1719236306::1::::<><>::
+cinammon_stick.png::CompressedTexture2D::8772167047103382095::1719236306::1719236306::1::::<><>::
+cinnamon-powder.png::CompressedTexture2D::4838775751149227389::1719236306::1719236306::1::::<><>::
+coconut-milk.png::CompressedTexture2D::2030668816632695723::1719236306::1719236306::1::::<><>::
+coconut.png::CompressedTexture2D::1172721141020144471::1719236306::1719236306::1::::<><>::
+eucalyptus.png::CompressedTexture2D::4117880712787912502::1719236306::1719236306::1::::<><>::
+eucalyptus_oil.png::CompressedTexture2D::7842644732554408547::1719236306::1719236306::1::::<><>::
+fish_skin (tilapia).png::CompressedTexture2D::307394970528926544::1719236306::1719236306::1::::<><>::
+hive.png::CompressedTexture2D::7126565088180919398::1719236306::1719236306::1::::<><>::
+honey.png::CompressedTexture2D::4310887356135003195::1719236306::1719236306::1::::<><>::
+lagundi.png::CompressedTexture2D::5490356020833274205::1719236306::1719236306::1::::<><>::
+lemon.png::CompressedTexture2D::7430400387545516764::1719236306::1719236306::1::::<><>::
+luya.png::CompressedTexture2D::2179080603208410184::1719236306::1719236306::1::::<><>::
+mint.png::CompressedTexture2D::3093592127360993646::1719236306::1719236306::1::::<><>::
+oregano.png::CompressedTexture2D::7248620391913213257::1719236306::1719236306::1::::<><>::
+papaya.png::CompressedTexture2D::680698464609082225::1719236306::1719236306::1::::<><>::
+rambutan.png::CompressedTexture2D::1765017882371185847::1719236306::1719236306::1::::<><>::
+sambong.png::CompressedTexture2D::4298846086270657064::1719236306::1719236306::1::::<><>::
+tanglad.png::CompressedTexture2D::1348223618259613327::1719236306::1719236306::1::::<><>::
+tawa-tawa.png::CompressedTexture2D::4741010879409647808::1719236306::1719236306::1::::<><>::
+tilapia.png::CompressedTexture2D::7085855730478606379::1719236306::1719236306::1::::<><>::
+Tulsi.png::CompressedTexture2D::537021077204334465::1719236306::1719236306::1::::<><>::
+turmeric-powder.png::CompressedTexture2D::231886487924087734::1719236306::1719236306::1::::<><>::
+water.png::CompressedTexture2D::629882179574819344::1719236306::1719236306::1::::<><>::
+watermelon.png::CompressedTexture2D::1974796323943076500::1719236306::1719236306::1::::<><>::
+::res://RecipeBook/potions/::1719236308
+allergy.png::CompressedTexture2D::1491585331978131423::1719236306::1719236306::1::::<><>::
+asthma.png::CompressedTexture2D::5897655366643834901::1719236306::1719236306::1::::<><>::
+balisawsaw.png::CompressedTexture2D::6737242460498590623::1719236306::1719236306::1::::<><>::
+dengue.png::CompressedTexture2D::8704750546681292852::1719236306::1719236306::1::::<><>::
+fever.png::CompressedTexture2D::8790937995309457526::1719236306::1719236306::1::::<><>::
+headache.png::CompressedTexture2D::6615607820278482801::1719236306::1719236306::1::::<><>::
+high-blood.png::CompressedTexture2D::4300858404487687217::1719236306::1719236306::1::::<><>::
+insomnia.png::CompressedTexture2D::2341435661934267130::1719236306::1719236306::1::::<><>::
+pagsusuka.png::CompressedTexture2D::3647718587457815139::1719236306::1719236306::1::::<><>::
+pamamantal.png::CompressedTexture2D::5913015487784588678::1719236306::1719236306::1::::<><>::
+pananakit ng kasu-kasuan.png::CompressedTexture2D::6382349039698534215::1719236306::1719236306::1::::<><>::
+pananakit ng tiyan.png::CompressedTexture2D::6593990437590230159::1719236306::1719236306::1::::<><>::
+pilay.png::CompressedTexture2D::7726472089707668285::1719236306::1719236308::1::::<><>::
+sipon.png::CompressedTexture2D::6146348236128393831::1719236308::1719236308::1::::<><>::
+sorethroat.png::CompressedTexture2D::6164089185788036117::1719236308::1719236308::1::::<><>::
+wound.png::CompressedTexture2D::4629140476001692992::1719236308::1719236308::1::::<><>::
+::res://Tug Of War/::1719908073
+blueSpiritidle.png::CompressedTexture2D::2870367230464470521::1719236308::1719236308::1::::<><>::
+Center.gd::GDScript::-1::1719908030::0::1::::<>Area2D<>::
+player-finish-tug-of-war.gd::GDScript::-1::1719236308::0::1::::<>Area2D<>::
+player.png::CompressedTexture2D::3644250702792829974::1719236308::1719236308::1::::<><>::
+tug_of_war.gdshader::Shader::-1::1719236308::0::1::::<><>::
+tug_of_war.tscn::PackedScene::417096910387202389::1719908073::0::1::::<><>::res://Tug Of War/tug_of_war.gdshader<>res://Tug Of War/player-finish-tug-of-war.gd<>uid://br6kjn2gn7cq5::::res://Tug Of War/player.png<>res://Tug Of War/Center.gd<>uid://i25v1e131ajp::::res://Assets/Character Assets/Kapre.png<>uid://c2fe063latqy4::::res://Assets/Fonts/Minecraftia-Regular.ttf<>uid://cupbystxycviq::::res://Assets/maps/tilesheet_basic.png<>uid://bg5or8owvut82::::res://Tug Of War/blueSpiritidle.png<>uid://4ejj3r8scv1g::::res://Assets/maps/terrain_tiles_v2.png<>uid://ceh25jsb0j5r3::::res://Assets/maps/assets_basic.png<>uid://drywnsyv4puej::::res://Assets/maps/water_and_island_tiles_v2.png<>uid://yo5ealhql1f1::::res://Assets/Fonts/upheaval.tres<>uid://ckeuldwvf8rq5::::res://Assets/Fonts/mcpe_font.tres<>uid://da5yy7p3qnpyo::::res://Assets/UI Assets/gold_coin.png
+::res://UI/::1719911931
+gold_coins.gd::GDScript::-1::1719908763::0::1::::<>Control<>::
+gold_coins.tscn::PackedScene::4595587347115250739::1719911931::0::1::::<><>::uid://da5yy7p3qnpyo::::res://Assets/UI Assets/gold_coin.png<>res://UI/gold_coins.gd<>uid://ckeuldwvf8rq5::::res://Assets/Fonts/mcpe_font.tres
+MainMenu.gd::GDScript::-1::1719897091::0::1::::<>Control<>::
+MainMenu.tscn::PackedScene::3057218070070515476::1719907478::0::1::::<><>::res://UI/MainMenu.gd<>uid://ckeuldwvf8rq5::::res://Assets/Fonts/mcpe_font.tres<>uid://covv3evrx7xja::::res://Assets/Others/Screen_Title.png<>uid://bclj7i8c5751d::::res://Music/Background_Music/Dance of the Moonlight.wav<>uid://c2fe063latqy4::::res://Assets/Fonts/Minecraftia-Regular.ttf
+options_menu.gd::GDScript::-1::1719236308::0::1::::<>Control<>::
+options_menu.tscn::PackedScene::9009832715521103983::1719645440::0::1::::<><>::res://UI/options_menu.gd<>uid://the6ira14x2m::::res://Assets/UI Assets/shop_bg.png<>uid://yo5ealhql1f1::::res://Assets/Fonts/upheaval.tres
+pause_btn.gd::GDScript::-1::1719236308::0::1::::<>Control<>::
+pause_btn.tscn::PackedScene::5064173802319046610::1719645455::0::1::::<><>::uid://duwrsafh6bfk3::::res://Assets/UI Assets/pause_btn.png<>res://UI/pause_btn.gd<>uid://bg1jeojpj63h0::::res://UI/pause_menu.tscn
+pause_menu.gd::GDScript::-1::1719236308::0::1::::<>Control<>::
+pause_menu.tscn::PackedScene::2861781913162318495::1719645440::0::1::::<><>::res://UI/pause_menu.gd<>uid://the6ira14x2m::::res://Assets/UI Assets/shop_bg.png<>uid://yo5ealhql1f1::::res://Assets/Fonts/upheaval.tres<>uid://d1movmrphs8ch::::res://UI/options_menu.tscn
+::res://World/::1719911916
+Collider.tscn::PackedScene::3519153409095272949::1719236310::0::1::::<><>::
+Door.gd::GDScript::-1::1719236310::0::1::::<>Area2D<>::
+Environment.gd::GDScript::-1::1719663568::0::1::::<>Node2D<>::
+Environment.tscn::PackedScene::2949303175113258541::1719911888::0::1::::<><>::res://World/Environment.gd<>uid://di4kwam87hs47::::res://Assets/maps/assets.png<>uid://drywnsyv4puej::::res://Assets/maps/water_and_island_tiles_v2.png<>uid://4ejj3r8scv1g::::res://Assets/maps/terrain_tiles_v2.png<>uid://d4fntjtw4posp::::res://Assets/maps/dirtpath_tiles.png<>uid://c68qhfvckelvu::::res://Assets/maps/plants free.png<>uid://cupbystxycviq::::res://Assets/maps/tilesheet_basic.png<>uid://bjckjfygogpbe::::res://Assets/maps/fence_tiles.png<>uid://bu5lhfk85bbst::::res://Assets/maps/ground_decorations.png<>uid://8hvg1ojex1rp::::res://Assets/maps/rope_fence_tiles.png<>uid://kjg3eciyjqd6::::res://Assets/maps/island.png<>uid://bhgwmh0iuwcci::::res://Assets/maps/assets_spritesheet_v2_free.png<>uid://b60hfgxesfugv::::res://Player/Player.tscn<>uid://vmt52kpawj1w::::res://Assets/maps/grasses.png<>res://Player/followcam.gd<>uid://cu8eoib7wykes::::res://Assets/maps/beach_tiles.png<>uid://dpur1jq2n5xi::::res://Assets/maps/dirt.png<>uid://qytb3we70jlr::::res://Assets/maps/fruits-trees.png<>uid://uiaihnieovrn::::res://Assets/maps/floor.png<>uid://v2bmu1051iuk::::res://Assets/maps/coconut.png<>uid://caghnt3q0e27n::::res://Assets/maps/house.png<>uid://bk4fxq02w66kg::::res://Assets/Items/Spawnable Items/spawn_banana.tscn<>uid://7h6m5gniw67q::::res://Assets/Items/Spawnable Items/spawn_bayabas.tscn<>uid://q7h2c6geacs5::::res://Assets/Items/Spawnable Items/spawn_calamansi.tscn<>uid://pj1qwyvu6sjn::::res://Player/Inventory/inv_ui.tscn<>uid://d14c3oad1ptmy::::res://Assets/Items/Spawnable Items/spawn_chico.tscn<>uid://4l2nqryqvr5::::res://World/Objects/Plants/growing_zone.tscn<>uid://t87n8udxfehh::::res://Assets/Items/Spawnable Items/spawn_lemon.tscn<>uid://dnwagbh25fp40::::res://Assets/Items/Spawnable Items/spawn_rambutan.tscn<>uid://dqah8v8h4syw2::::res://Assets/Items/Spawnable Items/spawn_watermelon.tscn<>res://World/Door.gd<>uid://ckeuldwvf8rq5::::res://Assets/Fonts/mcpe_font.tres<>uid://dtotuiwb5xydk::::res://Characters/npc.tscn<>res://Day And Night/day-night-cycle/demo/daynightcycle.gd<>uid://b6qewf6n8ts4j::::res://UI/gold_coins.tscn<>uid://vdx8t018pcls::::res://Assets/Items/Pickable items/Fruits/pickable_banana.tscn<>uid://bkpc1kjm4t2xn::::res://Day And Night/assets/daynightcycle-gradient-texture.tres<>uid://dxd1a0sdg3mhh::::res://Player/Inventory/inv_ui_small.tscn<>uid://cpqvp8oe3f7xs::::res://Assets/Items/Pickable items/Fruits/pickable_calamansi.tscn<>uid://ceolcwatpaicu::::res://Day And Night/day-night-cycle/demo/ui/daynightcycle_ui.tscn<>uid://cefeg5ir8mhe5::::res://UI/pause_btn.tscn<>uid://d2t8d7ajac5uf::::res://RecipeBook/RecipeBook.tscn<>uid://cui4rsfpw81gv::::res://Assets/Items/Pickable items/Fruits/pickable_chico.tscn<>uid://cgjcvmld32tdt::::res://Assets/Items/Pickable items/Fruits/pickable_lemon.tscn<>uid://bp1i3oqxo8uf2::::res://Assets/Items/Pickable items/Fruits/pickable_rambutan.tscn<>uid://b8gsjw48tio32::::res://Assets/Items/Pickable items/Fruits/pickable_watermelon.tscn<>uid://kduerykxeyke::::res://World/Shop.tscn<>uid://bcmpytckdkqdp::::res://Characters/cats.tscn<>uid://bfndp6mbvajge::::res://Characters/spawn_monsters.tscn
+house_inside.gd::GDScript::-1::1719236310::0::1::::<>Node2D<>::
+house_inside.tscn::PackedScene::1009964849854856216::1719911889::0::1::::<><>::res://World/house_inside.gd<>uid://c2cfcyuix1040::::res://Assets/maps/hut.png<>uid://b60hfgxesfugv::::res://Player/Player.tscn<>res://Player/followcam.gd<>uid://pj1qwyvu6sjn::::res://Player/Inventory/inv_ui.tscn<>uid://dxd1a0sdg3mhh::::res://Player/Inventory/inv_ui_small.tscn<>res://World/Door.gd<>res://Day And Night/day-night-cycle/demo/daynightcycle.gd<>uid://ceolcwatpaicu::::res://Day And Night/day-night-cycle/demo/ui/daynightcycle_ui.tscn<>uid://ckeuldwvf8rq5::::res://Assets/Fonts/mcpe_font.tres<>uid://bkpc1kjm4t2xn::::res://Day And Night/assets/daynightcycle-gradient-texture.tres<>uid://d2t8d7ajac5uf::::res://RecipeBook/RecipeBook.tscn<>uid://cefeg5ir8mhe5::::res://UI/pause_btn.tscn<>uid://b6qewf6n8ts4j::::res://UI/gold_coins.tscn
+light.gd::GDScript::-1::1719236310::0::1::::<>PointLight2D<>::
+light.tscn::PackedScene::8103758370180088224::1719236310::0::1::::<><>::res://World/light.gd
+Shop.gd::GDScript::-1::1719236310::0::1::::<>Area2D<>::
+Shop.tscn::PackedScene::709303983130985736::1719907478::0::1::::<><>::uid://ckeuldwvf8rq5::::res://Assets/Fonts/mcpe_font.tres<>res://World/Shop.gd<>uid://d1iiy0trs0o3c::::res://World/shop_menu.tscn
+shop_menu.gd::GDScript::-1::1719911774::0::1::::<>Control<>::
+shop_menu.tscn::PackedScene::9001216945928966074::1719911916::0::1::::<><>::res://World/shop_menu.gd<>uid://the6ira14x2m::::res://Assets/UI Assets/shop_bg.png<>uid://bhi1e8bsqookj::::res://Player/Inventory/playerinv.tres<>uid://yo5ealhql1f1::::res://Assets/Fonts/upheaval.tres<>uid://c1lg4wmp758gy::::res://Assets/Items/Fruits/Bayabas.png<>uid://dskhib6mgp65x::::res://Assets/Items/Herbs/banaba.png<>uid://6fchn0exug8::::res://Assets/UI Assets/left_arrow.png<>uid://r74oc06e2opt::::res://Assets/Items/Herbs/lagundi.png<>uid://bv7peeyr3vbxc::::res://Assets/Items/Fruits/Lemon.png<>uid://r08rtlw687s5::::res://Assets/Items/Herbs/sambong.png<>uid://b0hgfu0id8u0a::::res://Assets/Items/Fruits/Banana.png<>uid://dqjvkl4p4xtgv::::res://Assets/UI Assets/right_arrow.png<>uid://bi2g1q5mdjobt::::res://Assets/Items/Fruits/Chico.png<>uid://bnk1usy24mto5::::res://Assets/Items/Herbs/tawa-tawa.png<>uid://42ole2h1cgb7::::res://Assets/Items/Fruits/Watermelon.png<>uid://da5yy7p3qnpyo::::res://Assets/UI Assets/gold_coin.png<>uid://ckeuldwvf8rq5::::res://Assets/Fonts/mcpe_font.tres
+shop_slot.tscn::PackedScene::7308539348328100080::1719911889::0::1::::<><>::uid://bts7e7miuds3p::::res://Assets/UI Assets/Inventory_block_ui.png
+::res://World/Objects/::1719236310
+::res://World/Objects/Plants/::1719907478
+growing_zone1.gd::GDScript::-1::1719649323::0::1::::<>StaticBody2D<>::
+growing_zone1.tscn::PackedScene::4776363627872700209::1719664837::0::1::::<><>::res://World/Objects/Plants/growing_zone.gd<>uid://umh80pnf4ajm::::res://Assets/maps/spring farm tilemap.png<>uid://c68qhfvckelvu::::res://Assets/maps/plants free.png<>uid://qytb3we70jlr::::res://Assets/maps/fruits-trees.png
+growing_zone.gd::GDScript::-1::1719665026::0::1::::<>StaticBody2D<>::
+growing_zone.tscn::PackedScene::60583766549147348::1719907478::0::1::::<><>::res://World/Objects/Plants/growing_zone.gd<>uid://c68qhfvckelvu::::res://Assets/maps/plants free.png<>uid://qytb3we70jlr::::res://Assets/maps/fruits-trees.png
+potato_seed.gd::GDScript::-1::1719236310::0::1::::<>StaticBody2D<>::
+potato_seed.tscn::PackedScene::8332378545463943410::1719645534::0::1::::<><>::res://World/Objects/Plants/potato_seed.gd<>uid://bdeiythtsnwuw::::res://Assets/maps/items free.png
+tomato_seed.gd::GDScript::-1::1719236310::0::1::::<>StaticBody2D<>::
+tomato_seed.tscn::PackedScene::1900695574806144809::1719645534::0::1::::<><>::res://World/Objects/Plants/tomato_seed.gd<>uid://bdeiythtsnwuw::::res://Assets/maps/items free.png
+watering_can.gd::GDScript::-1::1719236310::0::1::::<>StaticBody2D<>::
+watering_can.tscn::PackedScene::3297897760021486137::1719236310::0::1::::<><>::res://World/Objects/Plants/watering_can.gd<>uid://b6l3w6dh57aij::::res://Assets/Watering Can.png

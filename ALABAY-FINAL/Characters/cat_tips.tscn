@@ -1,0 +1,245 @@
+[gd_scene load_steps=4 format=3 uid="uid://db2dt0rajhswq"]
+
+[ext_resource type="Script" path="res://Characters/cat_tips.gd" id="1_7yxti"]
+[ext_resource type="Texture2D" uid="uid://hmqepyo2pwg8" path="res://UI/Questboard.png" id="2_ytoy8"]
+[ext_resource type="FontVariation" uid="uid://ckeuldwvf8rq5" path="res://Assets/Fonts/mcpe_font.tres" id="3_qrmkx"]
+
+[node name="cat_tips" type="Control"]
+z_index = 6
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1152.0
+offset_bottom = -648.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7yxti")
+
+[node name="tip1" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_right = 384.0
+offset_bottom = 192.0
+texture = ExtResource("2_ytoy8")
+patch_margin_left = 8
+patch_margin_top = 8
+patch_margin_right = 8
+patch_margin_bottom = 8
+
+[node name="Title" type="RichTextLabel" parent="tip1"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.375
+anchor_top = 0.042
+anchor_right = 0.625
+anchor_bottom = 0.167
+offset_left = -1.52588e-05
+offset_top = -0.0640011
+offset_bottom = -0.064003
+theme_override_fonts/normal_font = ExtResource("3_qrmkx")
+theme_override_fonts/bold_font = ExtResource("3_qrmkx")
+bbcode_enabled = true
+text = "[center]Darrem[/center]"
+scroll_active = false
+
+[node name="Content" type="RichTextLabel" parent="tip1"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.042
+anchor_top = 0.167
+anchor_right = 0.958
+anchor_bottom = 0.708
+offset_left = -0.128002
+offset_top = -0.064003
+offset_right = 88.128
+offset_bottom = 26.064
+scale = Vector2(0.8, 0.8)
+theme_override_fonts/normal_font = ExtResource("3_qrmkx")
+theme_override_fonts/bold_font = ExtResource("3_qrmkx")
+bbcode_enabled = true
+text = "[center]
+Tip #1: Keep your inventory stocked with essential ingredients and potions."
+
+[node name="tip2" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_right = 384.0
+offset_bottom = 192.0
+texture = ExtResource("2_ytoy8")
+patch_margin_left = 8
+patch_margin_top = 8
+patch_margin_right = 8
+patch_margin_bottom = 8
+
+[node name="Title" type="RichTextLabel" parent="tip2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.375
+anchor_top = 0.042
+anchor_right = 0.625
+anchor_bottom = 0.167
+offset_left = -128.0
+offset_top = -0.0640001
+offset_right = 128.0
+offset_bottom = -0.0639992
+theme_override_fonts/normal_font = ExtResource("3_qrmkx")
+theme_override_fonts/bold_font = ExtResource("3_qrmkx")
+bbcode_enabled = true
+text = "[center]Darrem[/center]"
+scroll_active = false
+
+[node name="Content" type="RichTextLabel" parent="tip2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.042
+anchor_top = 0.167
+anchor_right = 0.958
+anchor_bottom = 0.708
+offset_left = -0.128002
+offset_top = -0.064003
+offset_right = 88.128
+offset_bottom = 26.064
+scale = Vector2(0.8, 0.8)
+theme_override_fonts/normal_font = ExtResource("3_qrmkx")
+theme_override_fonts/bold_font = ExtResource("3_qrmkx")
+bbcode_enabled = true
+text = "[center]
+Tip #2: Try different ingredient combinations to discover new potion effects."
+scroll_active = false
+
+[node name="tip3" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_right = 384.0
+offset_bottom = 192.0
+texture = ExtResource("2_ytoy8")
+patch_margin_left = 8
+patch_margin_top = 8
+patch_margin_right = 8
+patch_margin_bottom = 8
+
+[node name="Title" type="RichTextLabel" parent="tip3"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.375
+anchor_top = 0.042
+anchor_right = 0.625
+anchor_bottom = 0.167
+offset_left = -128.0
+offset_top = -0.0640001
+offset_right = 128.0
+offset_bottom = -0.0639992
+theme_override_fonts/normal_font = ExtResource("3_qrmkx")
+theme_override_fonts/bold_font = ExtResource("3_qrmkx")
+bbcode_enabled = true
+text = "[center]Darrem[/center]"
+scroll_active = false
+
+[node name="Content" type="RichTextLabel" parent="tip3"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.042
+anchor_top = 0.167
+anchor_right = 0.958
+anchor_bottom = 0.708
+offset_left = -0.128002
+offset_top = -0.064003
+offset_right = 88.128
+offset_bottom = 26.064
+scale = Vector2(0.8, 0.8)
+theme_override_fonts/normal_font = ExtResource("3_qrmkx")
+theme_override_fonts/bold_font = ExtResource("3_qrmkx")
+bbcode_enabled = true
+text = "[center]
+Tip #3: Watch out on Monsters. They spawn randomly in the island."
+scroll_active = false
+
+[node name="tip4" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_right = 384.0
+offset_bottom = 192.0
+texture = ExtResource("2_ytoy8")
+patch_margin_left = 8
+patch_margin_top = 8
+patch_margin_right = 8
+patch_margin_bottom = 8
+
+[node name="Title" type="RichTextLabel" parent="tip4"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.375
+anchor_top = 0.042
+anchor_right = 0.625
+anchor_bottom = 0.167
+offset_left = -128.0
+offset_top = -0.0640001
+offset_right = 128.0
+offset_bottom = -0.0639992
+theme_override_fonts/normal_font = ExtResource("3_qrmkx")
+theme_override_fonts/bold_font = ExtResource("3_qrmkx")
+bbcode_enabled = true
+text = "[center]Darrem[/center]"
+scroll_active = false
+
+[node name="Content" type="RichTextLabel" parent="tip4"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.042
+anchor_top = 0.167
+anchor_right = 0.958
+anchor_bottom = 0.708
+offset_left = -0.128002
+offset_top = -0.064003
+offset_right = 88.128
+offset_bottom = 26.064
+scale = Vector2(0.8, 0.8)
+theme_override_fonts/normal_font = ExtResource("3_qrmkx")
+theme_override_fonts/bold_font = ExtResource("3_qrmkx")
+bbcode_enabled = true
+text = "[center]
+Tip #4: The journey of an Alabay is challenging, but patience and perseverance will guide you to success."
+scroll_active = false
+
+[node name="tip5" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_right = 384.0
+offset_bottom = 192.0
+texture = ExtResource("2_ytoy8")
+patch_margin_left = 8
+patch_margin_top = 8
+patch_margin_right = 8
+patch_margin_bottom = 8
+
+[node name="Title" type="RichTextLabel" parent="tip5"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.375
+anchor_top = 0.042
+anchor_right = 0.625
+anchor_bottom = 0.167
+offset_left = -128.0
+offset_top = -0.0640001
+offset_right = 128.0
+offset_bottom = -0.0639992
+theme_override_fonts/normal_font = ExtResource("3_qrmkx")
+theme_override_fonts/bold_font = ExtResource("3_qrmkx")
+bbcode_enabled = true
+text = "[center]Darrem[/center]"
+scroll_active = false
+
+[node name="Content" type="RichTextLabel" parent="tip5"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.042
+anchor_top = 0.167
+anchor_right = 0.958
+anchor_bottom = 0.708
+offset_left = -0.128002
+offset_top = -0.064003
+offset_right = 88.128
+offset_bottom = 26.064
+scale = Vector2(0.8, 0.8)
+theme_override_fonts/normal_font = ExtResource("3_qrmkx")
+theme_override_fonts/bold_font = ExtResource("3_qrmkx")
+bbcode_enabled = true
+text = "[center]
+Tip #5: I don't need cat food"
+scroll_active = false

@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://d14c3oad1ptmy"]
+
+[ext_resource type="Script" path="res://Assets/Items/Spawnable Items/spawn_chico.gd" id="1_075ux"]
+
+[node name="spawn_chico" type="Node2D"]
+script = ExtResource("1_075ux")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 70.0
+autostart = true
+
+[node name="spawn_area" type="ReferenceRect" parent="."]
+offset_right = 64.0
+offset_bottom = 64.0
+
+[node name="chico_spawn" type="Node2D" parent="."]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

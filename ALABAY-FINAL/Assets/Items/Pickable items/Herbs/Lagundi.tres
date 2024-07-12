@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="InvItem" load_steps=3 format=3 uid="uid://bdnmqs2i60ju5"]
+
+[ext_resource type="Script" path="res://Player/Inventory/inventory_item.gd" id="1_w1voq"]
+[ext_resource type="Texture2D" uid="uid://r74oc06e2opt" path="res://Assets/Items/Herbs/lagundi.png" id="2_6g8sv"]
+
+[resource]
+script = ExtResource("1_w1voq")
+name = "Lagundi"
+texture = ExtResource("2_6g8sv")

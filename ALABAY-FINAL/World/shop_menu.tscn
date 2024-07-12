@@ -1,0 +1,492 @@
+[gd_scene load_steps=21 format=3 uid="uid://d1iiy0trs0o3c"]
+
+[ext_resource type="Script" path="res://World/shop_menu.gd" id="1_3ecoy"]
+[ext_resource type="Texture2D" uid="uid://the6ira14x2m" path="res://Assets/UI Assets/shop_bg.png" id="1_g8ucb"]
+[ext_resource type="Resource" uid="uid://bhi1e8bsqookj" path="res://Player/Inventory/playerinv.tres" id="2_4hfmj"]
+[ext_resource type="FontVariation" uid="uid://yo5ealhql1f1" path="res://Assets/Fonts/upheaval.tres" id="2_dq38u"]
+[ext_resource type="Texture2D" uid="uid://c1lg4wmp758gy" path="res://Assets/Items/Fruits/Bayabas.png" id="4_pg0k1"]
+[ext_resource type="Texture2D" uid="uid://dskhib6mgp65x" path="res://Assets/Items/Herbs/banaba.png" id="4_tclin"]
+[ext_resource type="Texture2D" uid="uid://6fchn0exug8" path="res://Assets/UI Assets/left_arrow.png" id="5_4t5dm"]
+[ext_resource type="Texture2D" uid="uid://r74oc06e2opt" path="res://Assets/Items/Herbs/lagundi.png" id="5_jljpp"]
+[ext_resource type="Texture2D" uid="uid://bv7peeyr3vbxc" path="res://Assets/Items/Fruits/Lemon.png" id="5_uqoou"]
+[ext_resource type="Texture2D" uid="uid://r08rtlw687s5" path="res://Assets/Items/Herbs/sambong.png" id="6_6gg68"]
+[ext_resource type="Texture2D" uid="uid://b0hgfu0id8u0a" path="res://Assets/Items/Fruits/Banana.png" id="6_reu34"]
+[ext_resource type="Texture2D" uid="uid://dqjvkl4p4xtgv" path="res://Assets/UI Assets/right_arrow.png" id="6_sumfb"]
+[ext_resource type="Texture2D" uid="uid://bi2g1q5mdjobt" path="res://Assets/Items/Fruits/Chico.png" id="7_7g6qy"]
+[ext_resource type="Texture2D" uid="uid://bnk1usy24mto5" path="res://Assets/Items/Herbs/tawa-tawa.png" id="7_h00kk"]
+[ext_resource type="Texture2D" uid="uid://42ole2h1cgb7" path="res://Assets/Items/Fruits/Watermelon.png" id="8_km0me"]
+[ext_resource type="Texture2D" uid="uid://da5yy7p3qnpyo" path="res://Assets/UI Assets/gold_coin.png" id="8_po1vl"]
+[ext_resource type="FontVariation" uid="uid://ckeuldwvf8rq5" path="res://Assets/Fonts/mcpe_font.tres" id="14_ep6kg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_j4hfu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rqd65"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4sm83"]
+
+[node name="shop_menu" type="Control"]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3ecoy")
+inv = ExtResource("2_4hfmj")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0588235, 0.0588235, 0.0588235, 0.392157)
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -374.0
+offset_top = -243.5
+offset_right = 374.0
+offset_bottom = 243.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_g8ucb")
+
+[node name="Shop" type="Label" parent="NinePatchRect"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -88.0
+offset_top = 23.5
+offset_right = 92.0
+offset_bottom = 92.5
+grow_horizontal = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_dq38u")
+theme_override_font_sizes/font_size = 75
+text = "SHOP"
+
+[node name="Buy" type="Button" parent="NinePatchRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.458
+anchor_top = 0.667
+anchor_right = 0.546
+anchor_bottom = 0.741
+offset_left = -16.584
+offset_top = 23.671
+offset_right = 18.592
+offset_bottom = 41.633
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.703808, 0.703808, 0.703808, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_dq38u")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/focus = SubResource("StyleBoxEmpty_j4hfu")
+action_mode = 0
+text = "BUY"
+flat = true
+
+[node name="Fruit_btn" type="Button" parent="NinePatchRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.083
+anchor_top = 0.147
+anchor_right = 0.329
+anchor_bottom = 0.262
+offset_left = -0.0840034
+offset_top = -0.0889969
+offset_right = -0.0920258
+offset_bottom = -2.09401
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.703808, 0.703808, 0.703808, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_dq38u")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/focus = SubResource("StyleBoxEmpty_j4hfu")
+action_mode = 0
+text = "FRUITS"
+flat = true
+
+[node name="fruit_line" type="Line2D" parent="NinePatchRect"]
+position = Vector2(66, 122.5)
+points = PackedVector2Array(0, 0, 88, 0, 176, 0)
+width = 3.0
+default_color = Color(1, 0.298039, 0.0392157, 1)
+
+[node name="Herb_btn" type="Button" parent="NinePatchRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.671
+anchor_top = 0.147
+anchor_right = 0.885
+anchor_bottom = 0.258
+offset_left = 0.0920105
+offset_top = -0.0889969
+offset_right = -1.98004
+offset_bottom = -0.146011
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.703808, 0.703808, 0.703808, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_dq38u")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/focus = SubResource("StyleBoxEmpty_j4hfu")
+action_mode = 0
+text = "herbs"
+flat = true
+
+[node name="herb_line" type="Line2D" parent="NinePatchRect"]
+position = Vector2(459, 119.5)
+points = PackedVector2Array(48, 0, 112, 0, 195, 0)
+width = 3.0
+default_color = Color(1, 0.298039, 0.0392157, 1)
+
+[node name="price_txt" type="Label" parent="NinePatchRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.431
+anchor_top = 0.571
+anchor_right = 0.571
+anchor_bottom = 0.614
+offset_left = 46.612
+offset_top = -140.577
+offset_right = 229.372
+offset_bottom = -89.297
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("14_ep6kg")
+theme_override_font_sizes/font_size = 30
+text = "99"
+
+[node name="price" type="Sprite2D" parent="NinePatchRect"]
+position = Vector2(350, 159.5)
+scale = Vector2(0.66, 0.66)
+texture = ExtResource("8_po1vl")
+
+[node name="Herbs" type="Control" parent="NinePatchRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="banaba" type="Sprite2D" parent="NinePatchRect/Herbs"]
+position = Vector2(20, 8)
+scale = Vector2(5, 5)
+texture = ExtResource("4_tclin")
+
+[node name="banaba_txt" type="Label" parent="NinePatchRect/Herbs"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.431
+anchor_top = 0.571
+anchor_right = 0.571
+anchor_bottom = 0.614
+offset_left = -79.24
+offset_top = 43.16
+offset_right = 79.16
+offset_bottom = 70.472
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_dq38u")
+theme_override_font_sizes/font_size = 30
+text = "banaba
+"
+horizontal_alignment = 1
+
+[node name="sambong" type="Sprite2D" parent="NinePatchRect/Herbs"]
+position = Vector2(20, 8)
+scale = Vector2(5, 5)
+texture = ExtResource("6_6gg68")
+
+[node name="sambong_txt" type="Label" parent="NinePatchRect/Herbs"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.431
+anchor_top = 0.571
+anchor_right = 0.571
+anchor_bottom = 0.614
+offset_left = -79.24
+offset_top = 43.16
+offset_right = 79.16
+offset_bottom = 70.472
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_dq38u")
+theme_override_font_sizes/font_size = 30
+text = "sambong"
+horizontal_alignment = 1
+
+[node name="tawa_tawa" type="Sprite2D" parent="NinePatchRect/Herbs"]
+position = Vector2(20, 8)
+scale = Vector2(5, 5)
+texture = ExtResource("7_h00kk")
+
+[node name="tawa_tawa_txt" type="Label" parent="NinePatchRect/Herbs"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.431
+anchor_top = 0.571
+anchor_right = 0.571
+anchor_bottom = 0.614
+offset_left = -80.24
+offset_top = 43.16
+offset_right = 83.52
+offset_bottom = 70.472
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_dq38u")
+theme_override_font_sizes/font_size = 30
+text = "tawa-tawa"
+horizontal_alignment = 1
+
+[node name="lagundi" type="Sprite2D" parent="NinePatchRect/Herbs"]
+position = Vector2(20, 8)
+scale = Vector2(5, 5)
+texture = ExtResource("5_jljpp")
+
+[node name="lagundi_txt" type="Label" parent="NinePatchRect/Herbs"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.431
+anchor_top = 0.571
+anchor_right = 0.571
+anchor_bottom = 0.614
+offset_left = -80.24
+offset_top = 43.16
+offset_right = 80.16
+offset_bottom = 70.472
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_dq38u")
+theme_override_font_sizes/font_size = 30
+text = "lagundi"
+horizontal_alignment = 1
+
+[node name="Fruits" type="Control" parent="NinePatchRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="banana" type="Sprite2D" parent="NinePatchRect/Fruits"]
+position = Vector2(20, 8)
+scale = Vector2(5, 5)
+texture = ExtResource("6_reu34")
+
+[node name="banana_txt" type="Label" parent="NinePatchRect/Fruits"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.431
+anchor_top = 0.571
+anchor_right = 0.571
+anchor_bottom = 0.614
+offset_left = -79.24
+offset_top = 43.16
+offset_right = 79.16
+offset_bottom = 70.558
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_dq38u")
+theme_override_font_sizes/font_size = 30
+text = "banana
+"
+horizontal_alignment = 1
+
+[node name="bayabas" type="Sprite2D" parent="NinePatchRect/Fruits"]
+position = Vector2(20, 8)
+scale = Vector2(5, 5)
+texture = ExtResource("4_pg0k1")
+
+[node name="bayabas_txt" type="Label" parent="NinePatchRect/Fruits"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.431
+anchor_top = 0.571
+anchor_right = 0.571
+anchor_bottom = 0.614
+offset_left = -79.24
+offset_top = 43.16
+offset_right = 79.16
+offset_bottom = 70.644
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_dq38u")
+theme_override_font_sizes/font_size = 30
+text = "bayabas"
+horizontal_alignment = 1
+
+[node name="chico" type="Sprite2D" parent="NinePatchRect/Fruits"]
+position = Vector2(20, 8)
+scale = Vector2(5, 5)
+texture = ExtResource("7_7g6qy")
+
+[node name="chico_txt" type="Label" parent="NinePatchRect/Fruits"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.431
+anchor_top = 0.571
+anchor_right = 0.571
+anchor_bottom = 0.614
+offset_left = -79.24
+offset_top = 43.16
+offset_right = 79.16
+offset_bottom = 70.644
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_dq38u")
+theme_override_font_sizes/font_size = 30
+text = "chico"
+horizontal_alignment = 1
+
+[node name="lemon" type="Sprite2D" parent="NinePatchRect/Fruits"]
+position = Vector2(20, 8)
+scale = Vector2(5, 5)
+texture = ExtResource("5_uqoou")
+
+[node name="lemon_txt" type="Label" parent="NinePatchRect/Fruits"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.431
+anchor_top = 0.571
+anchor_right = 0.571
+anchor_bottom = 0.614
+offset_left = -79.24
+offset_top = 43.16
+offset_right = 79.16
+offset_bottom = 70.644
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_dq38u")
+theme_override_font_sizes/font_size = 30
+text = "lemon
+"
+horizontal_alignment = 1
+
+[node name="watermelon" type="Sprite2D" parent="NinePatchRect/Fruits"]
+position = Vector2(20, 8)
+scale = Vector2(5, 5)
+texture = ExtResource("8_km0me")
+
+[node name="watermelon_txt" type="Label" parent="NinePatchRect/Fruits"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.431
+anchor_top = 0.571
+anchor_right = 0.571
+anchor_bottom = 0.614
+offset_left = -80.24
+offset_top = 43.16
+offset_right = 80.16
+offset_bottom = 70.472
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_dq38u")
+theme_override_font_sizes/font_size = 30
+text = "watermelon"
+horizontal_alignment = 1
+
+[node name="left_btn" type="Button" parent="NinePatchRect"]
+layout_mode = 0
+offset_left = 164.0
+offset_top = 195.5
+offset_right = 292.0
+offset_bottom = 283.5
+theme_override_styles/focus = SubResource("StyleBoxEmpty_rqd65")
+icon = ExtResource("5_4t5dm")
+flat = true
+
+[node name="right_btn" type="Button" parent="NinePatchRect"]
+layout_mode = 0
+offset_left = 462.0
+offset_top = 191.5
+offset_right = 590.0
+offset_bottom = 279.5
+theme_override_styles/focus = SubResource("StyleBoxEmpty_4sm83")
+icon = ExtResource("6_sumfb")
+flat = true
+
+[node name="shop_money" type="NinePatchRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -72.0
+offset_top = -364.0
+offset_right = 676.0
+offset_bottom = 123.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_g8ucb")
+
+[node name="price_txt" type="Label" parent="shop_money"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.495
+anchor_top = 0.5
+anchor_right = 0.963
+anchor_bottom = 0.903
+offset_left = -0.26004
+offset_top = -3.5
+offset_right = -280.324
+offset_bottom = -146.761
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(5, 5)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("14_ep6kg")
+theme_override_font_sizes/font_size = 30
+text = "99"
+
+[node name="price" type="Sprite2D" parent="shop_money"]
+position = Vector2(240, 345)
+scale = Vector2(5, 5)
+texture = ExtResource("8_po1vl")
+
+[connection signal="pressed" from="NinePatchRect/Buy" to="." method="_on_buy_pressed"]
+[connection signal="pressed" from="NinePatchRect/Fruit_btn" to="." method="_on_fruit_btn_pressed"]
+[connection signal="pressed" from="NinePatchRect/Herb_btn" to="." method="_on_herb_btn_pressed"]
+[connection signal="pressed" from="NinePatchRect/left_btn" to="." method="_on_left_btn_pressed"]
+[connection signal="pressed" from="NinePatchRect/right_btn" to="." method="_on_right_btn_pressed"]

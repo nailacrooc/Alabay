@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://dcekttawbbx65"]
+
+[ext_resource type="Texture2D" uid="uid://bts7e7miuds3p" path="res://Assets/UI Assets/Inventory_block_ui.png" id="1_6trh0"]
+
+[node name="shop_slot" type="Panel"]
+anchors_preset = -1
+anchor_right = 0.023
+anchor_bottom = 0.042
+offset_right = -26.496
+offset_bottom = -27.216
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(13, 14)
+texture = ExtResource("1_6trh0")

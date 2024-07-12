@@ -1,0 +1,148 @@
+[gd_scene load_steps=20 format=3 uid="uid://cabyam35ggbc0"]
+
+[ext_resource type="Script" path="res://World/Objects/Plants/growing_zone.gd" id="1_fbjx4"]
+[ext_resource type="Texture2D" uid="uid://umh80pnf4ajm" path="res://Assets/maps/spring farm tilemap.png" id="2_yxbjg"]
+[ext_resource type="Texture2D" uid="uid://c68qhfvckelvu" path="res://Assets/maps/plants free.png" id="3_d4jv3"]
+[ext_resource type="Texture2D" uid="uid://qytb3we70jlr" path="res://Assets/maps/fruits-trees.png" id="4_0retk"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_01adp"]
+atlas = ExtResource("2_yxbjg")
+region = Rect2(96, 240, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lulaa"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_01adp")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cdc8a"]
+size = Vector2(14, 14)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_be3at"]
+atlas = ExtResource("3_d4jv3")
+region = Rect2(0, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qcpf1"]
+atlas = ExtResource("3_d4jv3")
+region = Rect2(16, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e8y5j"]
+atlas = ExtResource("3_d4jv3")
+region = Rect2(32, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ug36n"]
+atlas = ExtResource("3_d4jv3")
+region = Rect2(48, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vdpvi"]
+atlas = ExtResource("3_d4jv3")
+region = Rect2(64, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kjhtn"]
+atlas = ExtResource("3_d4jv3")
+region = Rect2(0, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hn4j4"]
+atlas = ExtResource("3_d4jv3")
+region = Rect2(16, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_24le7"]
+atlas = ExtResource("3_d4jv3")
+region = Rect2(32, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b4atc"]
+atlas = ExtResource("3_d4jv3")
+region = Rect2(48, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fbs7j"]
+atlas = ExtResource("3_d4jv3")
+region = Rect2(64, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w3hmi"]
+atlas = ExtResource("4_0retk")
+region = Rect2(204, 85, 51, 85)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_c82aj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_be3at")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qcpf1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e8y5j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ug36n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vdpvi")
+}],
+"loop": true,
+"name": &"growing_potato",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kjhtn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hn4j4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_24le7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b4atc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fbs7j")
+}],
+"loop": true,
+"name": &"growing_tomato",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w3hmi")
+}],
+"loop": true,
+"name": &"null",
+"speed": 0.0
+}]
+
+[node name="Growing Zone" type="StaticBody2D"]
+script = ExtResource("1_fbjx4")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+visible = false
+sprite_frames = SubResource("SpriteFrames_lulaa")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_cdc8a")
+
+[node name="Plant" type="AnimatedSprite2D" parent="."]
+position = Vector2(-3.55271e-15, -2)
+scale = Vector2(0.875, 0.875)
+sprite_frames = SubResource("SpriteFrames_c82aj")
+animation = &"null"
+
+[node name="potato_timer" type="Timer" parent="."]
+wait_time = 2.0
+
+[node name="tomato_timer" type="Timer" parent="."]
+wait_time = 2.0
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]
+[connection signal="timeout" from="potato_timer" to="." method="_on_potato_timer_timeout"]
+[connection signal="timeout" from="tomato_timer" to="." method="_on_tomato_timer_timeout"]

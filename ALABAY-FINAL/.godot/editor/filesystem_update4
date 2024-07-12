@@ -1,0 +1,11 @@
+res://default_env.tres
+res://Player/Inventory/Inv_slot.gd
+res://Player/Inventory/Inv_UI.gd
+res://Player/Inventory/playerinv.tres
+res://Player/Inventory/inv_ui_slot.gd
+res://UI/beginning_story.tscn
+res://UI/beginning_story.gd
+res://Assets/Items/Pickable items/Fruits/pickable_apple.tscn
+res://global.gd
+res://UI/MainMenu.gd
+res://UI/MainMenu.tscn

@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://glktlbhglmfv"]
+
+[ext_resource type="Script" path="res://Music/AudioStreamPlayer.gd" id="1_so8uo"]
+[ext_resource type="AudioStream" uid="uid://hoohc2g24la" path="res://Music/Background_Music/In the Deep Woods.wav" id="1_x4x0b"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_x4x0b")
+autoplay = true
+script = ExtResource("1_so8uo")

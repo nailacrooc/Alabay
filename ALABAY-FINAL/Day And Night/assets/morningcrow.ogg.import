@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c80sog00tcewi"
+path="res://.godot/imported/morningcrow.ogg-cf0fc40e62f89b4b32be9699a2dab530.oggvorbisstr"
+
+[deps]
+
+source_file="res://Day And Night/assets/morningcrow.ogg"
+dest_files=["res://.godot/imported/morningcrow.ogg-cf0fc40e62f89b4b32be9699a2dab530.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

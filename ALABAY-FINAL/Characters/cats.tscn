@@ -1,0 +1,172 @@
+[gd_scene load_steps=18 format=3 uid="uid://bcmpytckdkqdp"]
+
+[ext_resource type="Texture2D" uid="uid://bpei47g1maljm" path="res://Assets/Character Assets/creme_0.png" id="1_6boho"]
+[ext_resource type="Script" path="res://Characters/cats.gd" id="1_p2tt3"]
+[ext_resource type="PackedScene" path="res://Characters/cat_tips.tscn" id="2_6qudj"]
+[ext_resource type="FontVariation" uid="uid://ckeuldwvf8rq5" path="res://Assets/Fonts/mcpe_font.tres" id="4_j5pdd"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_lxfw1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0hctl"]
+atlas = ExtResource("1_6boho")
+region = Rect2(0, 93, 32, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kmjxa"]
+atlas = ExtResource("1_6boho")
+region = Rect2(32, 93, 32, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hw33g"]
+atlas = ExtResource("1_6boho")
+region = Rect2(64, 93, 32, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7rheq"]
+atlas = ExtResource("1_6boho")
+region = Rect2(96, 93, 32, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_td40n"]
+atlas = ExtResource("1_6boho")
+region = Rect2(128, 93, 32, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k0rxg"]
+atlas = ExtResource("1_6boho")
+region = Rect2(160, 93, 32, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cdhnf"]
+atlas = ExtResource("1_6boho")
+region = Rect2(192, 93, 32, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_63ucm"]
+atlas = ExtResource("1_6boho")
+region = Rect2(224, 93, 32, 31)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_s6cwp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0hctl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kmjxa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hw33g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7rheq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_td40n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k0rxg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cdhnf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_63ucm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cdhnf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k0rxg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_td40n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7rheq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hw33g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kmjxa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0hctl")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 8.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_7iair"]
+radius = 55.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_qou7n"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_x83io"]
+radius = 200.0
+
+[node name="Cats" type="CharacterBody2D"]
+scale = Vector2(0.2, 0.2)
+script = ExtResource("1_p2tt3")
+
+[node name="Shadow" type="MeshInstance2D" parent="."]
+modulate = Color(0, 0, 0, 0.184314)
+position = Vector2(-0.382905, 57.1758)
+rotation = 3.14159
+scale = Vector2(112.561, 26.8533)
+mesh = SubResource("SphereMesh_lxfw1")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(5, 5)
+sprite_frames = SubResource("SpriteFrames_s6cwp")
+animation = &"idle"
+frame_progress = 0.874424
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_7iair")
+
+[node name="enter_npc_area" type="Node2D" parent="."]
+position = Vector2(72, 40)
+scale = Vector2(2, 1.993)
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="enter_npc_area"]
+self_modulate = Color(0.0627451, 0.0627451, 0.0627451, 0.129412)
+position = Vector2(13.3519, -20.0988)
+scale = Vector2(14.0048, 18.1958)
+mesh = SubResource("BoxMesh_qou7n")
+
+[node name="Label" type="Label" parent="enter_npc_area"]
+offset_left = 8.34495
+offset_top = -30.9857
+offset_right = 20.3449
+offset_bottom = -2.98568
+theme_override_fonts/font = ExtResource("4_j5pdd")
+text = "E"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="enter_npc_area/Label"]
+layout_mode = 0
+offset_left = 15.8554
+offset_top = 5.0247
+offset_right = 71.8554
+offset_bottom = 33.0247
+scale = Vector2(0.5, 0.5)
+theme_override_fonts/font = ExtResource("4_j5pdd")
+text = "Interact"
+metadata/_edit_use_anchors_ = true
+
+[node name="cat_tips" parent="." instance=ExtResource("2_6qudj")]
+z_index = 13
+offset_left = -200.0
+offset_top = -280.0
+offset_right = -200.0
+offset_bottom = -280.0
+
+[node name="npc_area" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="npc_area"]
+shape = SubResource("CircleShape2D_x83io")
+
+[connection signal="open_tip" from="." to="cat_tips" method="_on_cats_open_tip"]
+[connection signal="body_entered" from="npc_area" to="." method="_on_npc_area_body_entered"]
+[connection signal="body_exited" from="npc_area" to="." method="_on_npc_area_body_exited"]

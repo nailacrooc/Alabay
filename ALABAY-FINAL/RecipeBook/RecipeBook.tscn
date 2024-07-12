@@ -1,0 +1,955 @@
+[gd_scene load_steps=39 format=3 uid="uid://d2t8d7ajac5uf"]
+
+[ext_resource type="Script" path="res://RecipeBook/RecipeBook.gd" id="1_4t4dt"]
+[ext_resource type="Texture2D" uid="uid://j78ara50pfxd" path="res://RecipeBook/recipe book.png" id="1_pnunf"]
+[ext_resource type="Texture2D" uid="uid://ct26wbo8u6jer" path="res://RecipeBook/potions/sorethroat.png" id="3_tkogr"]
+[ext_resource type="Script" path="res://RecipeBook/Sorethroat2.gd" id="4_fd4li"]
+[ext_resource type="Texture2D" uid="uid://b67njdarettlg" path="res://RecipeBook/potions/wound.png" id="4_g2yj3"]
+[ext_resource type="Texture2D" uid="uid://cqa4r0x0jis2h" path="res://RecipeBook/potions/asthma.png" id="5_e4dpm"]
+[ext_resource type="Script" path="res://RecipeBook/Wound.gd" id="5_iy3em"]
+[ext_resource type="Texture2D" uid="uid://dxinp14gv7y3o" path="res://RecipeBook/potions/fever.png" id="6_jb4jr"]
+[ext_resource type="Texture2D" uid="uid://dwav78aa6gg1i" path="res://RecipeBook/potions/dengue.png" id="7_wrr13"]
+[ext_resource type="Script" path="res://RecipeBook/Asthma.gd" id="8_ovl4h"]
+[ext_resource type="Texture2D" uid="uid://b2jmrlbxswdbt" path="res://RecipeBook/potions/high-blood.png" id="8_wj1ud"]
+[ext_resource type="Script" path="res://RecipeBook/Fever.gd" id="9_5yyn0"]
+[ext_resource type="Texture2D" uid="uid://c28tntilmhwwd" path="res://RecipeBook/potions/balisawsaw.png" id="9_k1g3p"]
+[ext_resource type="Script" path="res://RecipeBook/Dengue.gd" id="11_xlc76"]
+[ext_resource type="Script" path="res://RecipeBook/High-blood.gd" id="13_38suv"]
+[ext_resource type="FontFile" uid="uid://c2fe063latqy4" path="res://Assets/Fonts/Minecraftia-Regular.ttf" id="14_pihsp"]
+[ext_resource type="Script" path="res://RecipeBook/Balisawsaw.gd" id="15_ywpxg"]
+[ext_resource type="Script" path="res://RecipeBook/Pagsusuka.gd" id="21_mcwn3"]
+[ext_resource type="Script" path="res://RecipeBook/Headache.gd" id="23_3pk0m"]
+[ext_resource type="Texture2D" uid="uid://b2inmqhpmo01a" path="res://RecipeBook/ingredients/sambong.png" id="23_r8v3p"]
+[ext_resource type="Texture2D" uid="uid://b8st0ysaiqmps" path="res://RecipeBook/ingredients/tawa-tawa.png" id="25_7aj50"]
+[ext_resource type="Texture2D" uid="uid://thdbtgth7jp4" path="res://RecipeBook/ingredients/tanglad.png" id="26_dwm42"]
+[ext_resource type="Texture2D" uid="uid://codfj1a65dcx8" path="res://RecipeBook/ingredients/banaba.png" id="29_2xbbp"]
+[ext_resource type="Texture2D" uid="uid://dskhib6mgp65x" path="res://Assets/Items/Herbs/banaba.png" id="33_dmafy"]
+[ext_resource type="Script" path="res://RecipeBook/PananakitNgTiyan.gd" id="40_5gpky"]
+[ext_resource type="Texture2D" uid="uid://b0hgfu0id8u0a" path="res://Assets/Items/Fruits/Banana.png" id="47_fke38"]
+[ext_resource type="Texture2D" uid="uid://c07gcalm5swlr" path="res://RecipeBook/potions/pananakit ng tiyan.png" id="48_hfvbs"]
+[ext_resource type="Texture2D" uid="uid://bi2g1q5mdjobt" path="res://Assets/Items/Fruits/Chico.png" id="48_ty2tk"]
+[ext_resource type="Texture2D" uid="uid://r74oc06e2opt" path="res://Assets/Items/Herbs/lagundi.png" id="49_40kot"]
+[ext_resource type="Texture2D" uid="uid://br78nlm6cngoh" path="res://RecipeBook/potions/pagsusuka.png" id="50_ifdy3"]
+[ext_resource type="Texture2D" uid="uid://c1lg4wmp758gy" path="res://Assets/Items/Fruits/Bayabas.png" id="50_vpci4"]
+[ext_resource type="Texture2D" uid="uid://c1iwdg7kpdu70" path="res://RecipeBook/potions/headache.png" id="51_2dfn3"]
+[ext_resource type="Texture2D" uid="uid://bv7peeyr3vbxc" path="res://Assets/Items/Fruits/Lemon.png" id="51_e13wj"]
+[ext_resource type="Texture2D" uid="uid://42ole2h1cgb7" path="res://Assets/Items/Fruits/Watermelon.png" id="51_kr36m"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_doxtc"]
+line_spacing = 100.0
+font = ExtResource("14_pihsp")
+font_size = 17
+
+[sub_resource type="LabelSettings" id="LabelSettings_u0srt"]
+font = ExtResource("14_pihsp")
+
+[sub_resource type="LabelSettings" id="LabelSettings_508ne"]
+font = ExtResource("14_pihsp")
+
+[sub_resource type="LabelSettings" id="LabelSettings_w85ko"]
+font = ExtResource("14_pihsp")
+font_size = 19
+
+[node name="RecipeBook" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4t4dt")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0588235, 0.0588235, 0.0588235, 0.392157)
+
+[node name="RecipeBook1" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.5, 0.5)
+
+[node name="Book" type="Sprite2D" parent="RecipeBook1"]
+position = Vector2(-3.06165, -66.5621)
+scale = Vector2(1.01405, 0.748958)
+texture = ExtResource("1_pnunf")
+
+[node name="list" type="Control" parent="RecipeBook1"]
+anchors_preset = 0
+offset_left = -573.125
+offset_top = -400.0
+offset_right = -533.125
+offset_bottom = -360.0
+
+[node name="Sorethroat2" type="Sprite2D" parent="RecipeBook1/list"]
+texture_filter = 1
+position = Vector2(172, 149)
+scale = Vector2(5.03125, 5.0625)
+texture = ExtResource("3_tkogr")
+script = ExtResource("4_fd4li")
+
+[node name="Wound" type="Sprite2D" parent="RecipeBook1/list"]
+texture_filter = 1
+position = Vector2(314, 149)
+scale = Vector2(5.031, 5.063)
+texture = ExtResource("4_g2yj3")
+script = ExtResource("5_iy3em")
+
+[node name="Asthma" type="Sprite2D" parent="RecipeBook1/list"]
+texture_filter = 1
+position = Vector2(450, 149)
+scale = Vector2(5.031, 5.063)
+texture = ExtResource("5_e4dpm")
+script = ExtResource("8_ovl4h")
+
+[node name="Fever" type="Sprite2D" parent="RecipeBook1/list"]
+texture_filter = 1
+position = Vector2(172, 264)
+scale = Vector2(5.031, 5.063)
+texture = ExtResource("6_jb4jr")
+script = ExtResource("9_5yyn0")
+
+[node name="Dengue" type="Sprite2D" parent="RecipeBook1/list"]
+texture_filter = 1
+position = Vector2(314, 264)
+scale = Vector2(5.031, 5.063)
+texture = ExtResource("7_wrr13")
+script = ExtResource("11_xlc76")
+
+[node name="High-blood" type="Sprite2D" parent="RecipeBook1/list"]
+texture_filter = 1
+position = Vector2(450, 264)
+scale = Vector2(5.031, 5.063)
+texture = ExtResource("8_wj1ud")
+script = ExtResource("13_38suv")
+
+[node name="Balisawsaw" type="Sprite2D" parent="RecipeBook1/list"]
+texture_filter = 1
+position = Vector2(172, 385)
+scale = Vector2(5.031, 5.063)
+texture = ExtResource("9_k1g3p")
+script = ExtResource("15_ywpxg")
+
+[node name="PananakitNgTiyan" type="Sprite2D" parent="RecipeBook1/list"]
+texture_filter = 1
+position = Vector2(313.125, 385.5)
+scale = Vector2(5.061, 5.0625)
+texture = ExtResource("48_hfvbs")
+script = ExtResource("40_5gpky")
+
+[node name="Pagsusuka" type="Sprite2D" parent="RecipeBook1/list"]
+texture_filter = 1
+position = Vector2(449.125, 388)
+scale = Vector2(5, 5)
+texture = ExtResource("50_ifdy3")
+script = ExtResource("21_mcwn3")
+
+[node name="Headache" type="Sprite2D" parent="RecipeBook1/list"]
+texture_filter = 1
+position = Vector2(172.125, 513.5)
+scale = Vector2(4.875, 5.0625)
+texture = ExtResource("51_2dfn3")
+script = ExtResource("23_3pk0m")
+
+[node name="ingredients" type="Control" parent="RecipeBook1"]
+anchors_preset = 0
+offset_left = -573.125
+offset_top = -400.0
+offset_right = -533.125
+offset_bottom = -360.0
+
+[node name="SoreThroat" type="Control" parent="RecipeBook1/ingredients"]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sorethroat" type="Sprite2D" parent="RecipeBook1/ingredients/SoreThroat"]
+texture_filter = 1
+position = Vector2(949.187, 152.562)
+scale = Vector2(9.77343, 9.94531)
+texture = ExtResource("3_tkogr")
+
+[node name="Label" type="Label" parent="RecipeBook1/ingredients/SoreThroat"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 908.187
+offset_top = 238.562
+offset_right = 1015.19
+offset_bottom = 271.562
+text = "Potion #1"
+label_settings = SubResource("LabelSettings_doxtc")
+
+[node name="Label2" type="Label" parent="RecipeBook1/ingredients/SoreThroat"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 658.0
+offset_top = 171.0
+offset_right = 821.0
+offset_bottom = 298.0
+text = "1 Guava
+1 Lemon"
+label_settings = SubResource("LabelSettings_u0srt")
+
+[node name="Label3" type="Label" parent="RecipeBook1/ingredients/SoreThroat"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 659.0
+offset_top = 366.0
+offset_right = 941.0
+offset_bottom = 518.0
+text = "How to prepare?
+1. Prepare 1 piece of guava 
+2. Prepare 1 piece of lemon
+3. Mix all together
+4. Drink"
+label_settings = SubResource("LabelSettings_508ne")
+
+[node name="Label4" type="Label" parent="RecipeBook1/ingredients/SoreThroat"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 661.0
+offset_top = 88.0
+offset_right = 856.0
+offset_bottom = 122.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "FOR SORE THROAT"
+label_settings = SubResource("LabelSettings_w85ko")
+
+[node name="Wound" type="Control" parent="RecipeBook1/ingredients"]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Wound2" type="Sprite2D" parent="RecipeBook1/ingredients/Wound"]
+texture_filter = 1
+position = Vector2(949.187, 152.562)
+scale = Vector2(9.773, 9.945)
+texture = ExtResource("4_g2yj3")
+
+[node name="Label" type="Label" parent="RecipeBook1/ingredients/Wound"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 908.187
+offset_top = 238.562
+offset_right = 1015.19
+offset_bottom = 271.562
+text = "Potion #2"
+label_settings = SubResource("LabelSettings_doxtc")
+
+[node name="Label2" type="Label" parent="RecipeBook1/ingredients/Wound"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 658.0
+offset_top = 171.0
+offset_right = 821.0
+offset_bottom = 298.0
+text = "3 Banana
+1 Lemon"
+label_settings = SubResource("LabelSettings_u0srt")
+
+[node name="Label3" type="Label" parent="RecipeBook1/ingredients/Wound"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 659.0
+offset_top = 366.0
+offset_right = 941.0
+offset_bottom = 518.0
+text = "How to prepare?
+1. Prepare 3 pieces of banana
+2. Prepare 1 piece of lemon
+3. Mix all together
+4. Put in the wound"
+label_settings = SubResource("LabelSettings_508ne")
+
+[node name="Label4" type="Label" parent="RecipeBook1/ingredients/Wound"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 661.0
+offset_top = 88.0
+offset_right = 856.0
+offset_bottom = 122.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "FOR WOUND"
+label_settings = SubResource("LabelSettings_w85ko")
+
+[node name="Asthma" type="Control" parent="RecipeBook1/ingredients"]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Asthma2" type="Sprite2D" parent="RecipeBook1/ingredients/Asthma"]
+texture_filter = 1
+position = Vector2(949.187, 152.562)
+scale = Vector2(9.773, 9.945)
+texture = ExtResource("5_e4dpm")
+
+[node name="Label" type="Label" parent="RecipeBook1/ingredients/Asthma"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 908.187
+offset_top = 238.562
+offset_right = 1015.19
+offset_bottom = 271.562
+text = "Potion #3"
+label_settings = SubResource("LabelSettings_doxtc")
+
+[node name="Label2" type="Label" parent="RecipeBook1/ingredients/Asthma"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 658.0
+offset_top = 171.0
+offset_right = 821.0
+offset_bottom = 298.0
+text = "1 Papaya
+7 Lagundi Leaves"
+label_settings = SubResource("LabelSettings_u0srt")
+
+[node name="Label3" type="Label" parent="RecipeBook1/ingredients/Asthma"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 659.0
+offset_top = 366.0
+offset_right = 941.0
+offset_bottom = 518.0
+text = "How to prepare?
+1. Prepare 1 piece of papaya
+2. Prepare 7 pieces of  lagundi leaves
+3. Mix all together
+4. Drink"
+label_settings = SubResource("LabelSettings_508ne")
+
+[node name="Label4" type="Label" parent="RecipeBook1/ingredients/Asthma"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 661.0
+offset_top = 88.0
+offset_right = 856.0
+offset_bottom = 122.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "FOR ASTHMA"
+label_settings = SubResource("LabelSettings_w85ko")
+
+[node name="Fever" type="Control" parent="RecipeBook1/ingredients"]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Fever2" type="Sprite2D" parent="RecipeBook1/ingredients/Fever"]
+texture_filter = 1
+position = Vector2(949.187, 152.562)
+scale = Vector2(9.773, 9.945)
+texture = ExtResource("6_jb4jr")
+
+[node name="Label" type="Label" parent="RecipeBook1/ingredients/Fever"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 908.187
+offset_top = 238.562
+offset_right = 1015.19
+offset_bottom = 271.562
+text = "Potion #4"
+label_settings = SubResource("LabelSettings_doxtc")
+
+[node name="Label2" type="Label" parent="RecipeBook1/ingredients/Fever"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 658.0
+offset_top = 171.0
+offset_right = 821.0
+offset_bottom = 298.0
+text = "5 Guava
+7 Sambong Leaves"
+label_settings = SubResource("LabelSettings_u0srt")
+
+[node name="Label3" type="Label" parent="RecipeBook1/ingredients/Fever"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 659.0
+offset_top = 366.0
+offset_right = 941.0
+offset_bottom = 518.0
+text = "How to prepare?
+1. Prepare 5 pieces of guava
+2. Prepare 7 sambong leaves
+3. Mix all together
+4. Drink"
+label_settings = SubResource("LabelSettings_508ne")
+
+[node name="Label4" type="Label" parent="RecipeBook1/ingredients/Fever"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 661.0
+offset_top = 88.0
+offset_right = 856.0
+offset_bottom = 122.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "FOR FEVER"
+label_settings = SubResource("LabelSettings_w85ko")
+
+[node name="Dengue" type="Control" parent="RecipeBook1/ingredients"]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Dengue2" type="Sprite2D" parent="RecipeBook1/ingredients/Dengue"]
+texture_filter = 1
+position = Vector2(949.187, 152.562)
+scale = Vector2(9.773, 9.945)
+texture = ExtResource("7_wrr13")
+
+[node name="Label" type="Label" parent="RecipeBook1/ingredients/Dengue"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 908.187
+offset_top = 238.562
+offset_right = 1015.19
+offset_bottom = 271.562
+text = "Potion #5"
+label_settings = SubResource("LabelSettings_doxtc")
+
+[node name="Label2" type="Label" parent="RecipeBook1/ingredients/Dengue"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 658.0
+offset_top = 171.0
+offset_right = 821.0
+offset_bottom = 298.0
+text = "1 Watermelon
+7 Tawa-tawa Leaves"
+label_settings = SubResource("LabelSettings_u0srt")
+
+[node name="Label3" type="Label" parent="RecipeBook1/ingredients/Dengue"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 659.0
+offset_top = 366.0
+offset_right = 941.0
+offset_bottom = 518.0
+text = "How to prepare?
+1. Prepare 1 piece of watermelon
+2. Prepare 7 tawa-tawa leaves
+3. Mix all together
+4. Drink"
+label_settings = SubResource("LabelSettings_508ne")
+
+[node name="Label4" type="Label" parent="RecipeBook1/ingredients/Dengue"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 661.0
+offset_top = 88.0
+offset_right = 856.0
+offset_bottom = 122.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "FOR DENGUE"
+label_settings = SubResource("LabelSettings_w85ko")
+
+[node name="Highbood" type="Control" parent="RecipeBook1/ingredients"]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="High-blood2" type="Sprite2D" parent="RecipeBook1/ingredients/Highbood"]
+texture_filter = 1
+position = Vector2(949.187, 152.562)
+scale = Vector2(9.773, 9.945)
+texture = ExtResource("8_wj1ud")
+
+[node name="Label" type="Label" parent="RecipeBook1/ingredients/Highbood"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 908.187
+offset_top = 238.562
+offset_right = 1015.19
+offset_bottom = 271.562
+text = "Potion #6"
+label_settings = SubResource("LabelSettings_doxtc")
+
+[node name="Label2" type="Label" parent="RecipeBook1/ingredients/Highbood"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 658.0
+offset_top = 171.0
+offset_right = 821.0
+offset_bottom = 298.0
+text = "1 Lemon
+7 Tanglad Leaves"
+label_settings = SubResource("LabelSettings_u0srt")
+
+[node name="Label3" type="Label" parent="RecipeBook1/ingredients/Highbood"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 659.0
+offset_top = 366.0
+offset_right = 941.0
+offset_bottom = 518.0
+text = "How to prepare?
+1. Prepare 1 piece of lemon
+2. Prepare 7 tanglad leaves
+3. Mix all together
+4. Drink"
+label_settings = SubResource("LabelSettings_508ne")
+
+[node name="Label4" type="Label" parent="RecipeBook1/ingredients/Highbood"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 661.0
+offset_top = 88.0
+offset_right = 879.0
+offset_bottom = 159.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "FOR HIGH-BLOOD
+ PRESSURE"
+label_settings = SubResource("LabelSettings_w85ko")
+
+[node name="Balisawsaw" type="Control" parent="RecipeBook1/ingredients"]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Balisawsaw2" type="Sprite2D" parent="RecipeBook1/ingredients/Balisawsaw"]
+texture_filter = 1
+position = Vector2(949.187, 152.562)
+scale = Vector2(9.773, 9.945)
+texture = ExtResource("9_k1g3p")
+
+[node name="Label" type="Label" parent="RecipeBook1/ingredients/Balisawsaw"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 908.187
+offset_top = 238.562
+offset_right = 1015.19
+offset_bottom = 271.562
+text = "Potion #7"
+label_settings = SubResource("LabelSettings_doxtc")
+
+[node name="Label2" type="Label" parent="RecipeBook1/ingredients/Balisawsaw"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 658.0
+offset_top = 171.0
+offset_right = 821.0
+offset_bottom = 298.0
+text = "1 Lemon
+7 Banaba Leaves"
+label_settings = SubResource("LabelSettings_u0srt")
+
+[node name="Label3" type="Label" parent="RecipeBook1/ingredients/Balisawsaw"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 659.0
+offset_top = 366.0
+offset_right = 941.0
+offset_bottom = 518.0
+text = "How to prepare?
+1. Prepare 1 piece of lemon
+2. Prepare 7 banaba leaves
+3. Mix all together
+4. Drink"
+label_settings = SubResource("LabelSettings_508ne")
+
+[node name="Label4" type="Label" parent="RecipeBook1/ingredients/Balisawsaw"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 661.0
+offset_top = 88.0
+offset_right = 856.0
+offset_bottom = 122.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "FOR UTI"
+label_settings = SubResource("LabelSettings_w85ko")
+
+[node name="Pananakit ng Tiyan" type="Control" parent="RecipeBook1/ingredients"]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="PananakitNgTiyan2" type="Sprite2D" parent="RecipeBook1/ingredients/Pananakit ng Tiyan"]
+texture_filter = 1
+position = Vector2(949.125, 153.75)
+scale = Vector2(9.75, 10.0313)
+texture = ExtResource("48_hfvbs")
+
+[node name="Label" type="Label" parent="RecipeBook1/ingredients/Pananakit ng Tiyan"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 908.187
+offset_top = 238.562
+offset_right = 1015.19
+offset_bottom = 271.562
+text = "Potion #8"
+label_settings = SubResource("LabelSettings_doxtc")
+
+[node name="Label2" type="Label" parent="RecipeBook1/ingredients/Pananakit ng Tiyan"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 658.0
+offset_top = 171.0
+offset_right = 821.0
+offset_bottom = 298.0
+text = "1 Banana
+1 Papaya"
+label_settings = SubResource("LabelSettings_u0srt")
+
+[node name="Label3" type="Label" parent="RecipeBook1/ingredients/Pananakit ng Tiyan"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 659.0
+offset_top = 366.0
+offset_right = 941.0
+offset_bottom = 518.0
+text = "How to prepare?
+1. Prepare 1 piece of banana
+2. Prepare 1 piece of papaya
+3. Mix all together
+4. Drink"
+label_settings = SubResource("LabelSettings_508ne")
+
+[node name="Label4" type="Label" parent="RecipeBook1/ingredients/Pananakit ng Tiyan"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 661.0
+offset_top = 88.0
+offset_right = 856.0
+offset_bottom = 122.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "FOR STOMACHACHE"
+label_settings = SubResource("LabelSettings_w85ko")
+
+[node name="Pagsusuka" type="Control" parent="RecipeBook1/ingredients"]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Pagsusuka2" type="Sprite2D" parent="RecipeBook1/ingredients/Pagsusuka"]
+texture_filter = 1
+position = Vector2(948.125, 154)
+scale = Vector2(9.62499, 10)
+texture = ExtResource("50_ifdy3")
+
+[node name="Label" type="Label" parent="RecipeBook1/ingredients/Pagsusuka"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 908.187
+offset_top = 238.562
+offset_right = 1015.19
+offset_bottom = 271.562
+text = "Potion #9"
+label_settings = SubResource("LabelSettings_doxtc")
+
+[node name="Label2" type="Label" parent="RecipeBook1/ingredients/Pagsusuka"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 658.0
+offset_top = 171.0
+offset_right = 821.0
+offset_bottom = 298.0
+text = "1 Lemon
+1 Papaya"
+label_settings = SubResource("LabelSettings_u0srt")
+
+[node name="Label3" type="Label" parent="RecipeBook1/ingredients/Pagsusuka"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 659.0
+offset_top = 366.0
+offset_right = 941.0
+offset_bottom = 518.0
+text = "How to prepare?
+1. Prepare 1 piece of lemon
+2. Prepare 1 peice of papaya
+3. Mix all together
+4. Drink"
+label_settings = SubResource("LabelSettings_508ne")
+
+[node name="Label4" type="Label" parent="RecipeBook1/ingredients/Pagsusuka"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 661.0
+offset_top = 88.0
+offset_right = 879.0
+offset_bottom = 159.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "FOR VOMITING"
+label_settings = SubResource("LabelSettings_w85ko")
+
+[node name="Headache" type="Control" parent="RecipeBook1/ingredients"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Headache2" type="Sprite2D" parent="RecipeBook1/ingredients/Headache"]
+texture_filter = 1
+position = Vector2(948.125, 153.75)
+scale = Vector2(9.625, 10.0313)
+texture = ExtResource("51_2dfn3")
+
+[node name="Label" type="Label" parent="RecipeBook1/ingredients/Headache"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 908.187
+offset_top = 238.562
+offset_right = 1015.19
+offset_bottom = 271.562
+text = "Potion #10"
+label_settings = SubResource("LabelSettings_doxtc")
+
+[node name="Label2" type="Label" parent="RecipeBook1/ingredients/Headache"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 658.0
+offset_top = 171.0
+offset_right = 821.0
+offset_bottom = 298.0
+text = "1 Lemon
+1 Watermelon"
+label_settings = SubResource("LabelSettings_u0srt")
+
+[node name="Label3" type="Label" parent="RecipeBook1/ingredients/Headache"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 659.0
+offset_top = 366.0
+offset_right = 941.0
+offset_bottom = 518.0
+text = "How to prepare?
+1. Prepare 1 piece of lemon
+2. Prepare 1 piece of watermelon
+3. Mix all together
+4. Drink"
+label_settings = SubResource("LabelSettings_508ne")
+
+[node name="Label4" type="Label" parent="RecipeBook1/ingredients/Headache"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 661.0
+offset_top = 88.0
+offset_right = 856.0
+offset_bottom = 122.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "FOR HEADACHE"
+label_settings = SubResource("LabelSettings_w85ko")
+
+[node name="SoreThroat" type="Control" parent="RecipeBook1"]
+anchors_preset = 0
+offset_left = -556.125
+offset_top = 276.0
+offset_right = -377.125
+offset_bottom = 347.0
+
+[node name="Bayabas" type="Sprite2D" parent="RecipeBook1/SoreThroat"]
+position = Vector2(46.125, 30)
+scale = Vector2(2, 2)
+texture = ExtResource("50_vpci4")
+
+[node name="Lemon" type="Sprite2D" parent="RecipeBook1/SoreThroat"]
+position = Vector2(104.125, 30)
+scale = Vector2(2, 2)
+texture = ExtResource("51_e13wj")
+
+[node name="Wound" type="Control" parent="RecipeBook1"]
+anchors_preset = 0
+offset_left = -337.125
+offset_top = 281.0
+offset_right = -197.125
+offset_bottom = 350.0
+
+[node name="Banana" type="Sprite2D" parent="RecipeBook1/Wound"]
+position = Vector2(31.125, 29)
+scale = Vector2(2, 2)
+texture = ExtResource("47_fke38")
+
+[node name="Lemon" type="Sprite2D" parent="RecipeBook1/Wound"]
+position = Vector2(87.125, 29)
+scale = Vector2(2, 2)
+texture = ExtResource("51_e13wj")
+
+[node name="Asthma" type="Control" parent="RecipeBook1"]
+anchors_preset = 0
+offset_left = -159.125
+offset_top = 285.0
+offset_right = -38.1246
+offset_bottom = 353.0
+
+[node name="Chico" type="Sprite2D" parent="RecipeBook1/Asthma"]
+position = Vector2(29.125, 41)
+scale = Vector2(2, 2)
+texture = ExtResource("48_ty2tk")
+
+[node name="Lagundi" type="Sprite2D" parent="RecipeBook1/Asthma"]
+position = Vector2(75.125, 37)
+scale = Vector2(2, 2)
+texture = ExtResource("49_40kot")
+
+[node name="Fever" type="Control" parent="RecipeBook1"]
+anchors_preset = 0
+offset_left = -40.1246
+offset_top = 288.0
+offset_right = 80.8754
+offset_bottom = 356.0
+
+[node name="Bayabas" type="Sprite2D" parent="RecipeBook1/Fever"]
+position = Vector2(40.1246, 38)
+scale = Vector2(2, 2)
+texture = ExtResource("50_vpci4")
+
+[node name="Sambong" type="Sprite2D" parent="RecipeBook1/Fever"]
+position = Vector2(105, 39)
+texture = ExtResource("23_r8v3p")
+
+[node name="Dengue" type="Control" parent="RecipeBook1"]
+anchors_preset = 0
+offset_left = 99.8754
+offset_top = 287.0
+offset_right = 220.875
+offset_bottom = 355.0
+
+[node name="Watermelon" type="Sprite2D" parent="RecipeBook1/Dengue"]
+position = Vector2(32.1246, 47)
+scale = Vector2(2, 2)
+texture = ExtResource("51_kr36m")
+
+[node name="Tawa-tawa" type="Sprite2D" parent="RecipeBook1/Dengue"]
+position = Vector2(100, 38)
+texture = ExtResource("25_7aj50")
+
+[node name="Highblood" type="Control" parent="RecipeBook1"]
+anchors_preset = 0
+offset_left = 220.875
+offset_top = 288.0
+offset_right = 341.875
+offset_bottom = 356.0
+
+[node name="Lemon" type="Sprite2D" parent="RecipeBook1/Highblood"]
+position = Vector2(33.125, 38)
+scale = Vector2(2, 2)
+texture = ExtResource("51_e13wj")
+
+[node name="Tanglad" type="Sprite2D" parent="RecipeBook1/Highblood"]
+position = Vector2(91, 37)
+texture = ExtResource("26_dwm42")
+
+[node name="Balisawsaw" type="Control" parent="RecipeBook1"]
+anchors_preset = 0
+offset_left = 338.875
+offset_top = 288.0
+offset_right = 459.875
+offset_bottom = 356.0
+
+[node name="Lemon" type="Sprite2D" parent="RecipeBook1/Balisawsaw"]
+position = Vector2(87.125, 42)
+scale = Vector2(2, 2)
+texture = ExtResource("51_e13wj")
+
+[node name="Banaba" type="Sprite2D" parent="RecipeBook1/Balisawsaw"]
+position = Vector2(38, 37)
+texture = ExtResource("29_2xbbp")
+
+[node name="PananakitngTiyan" type="Control" parent="RecipeBook1"]
+anchors_preset = 0
+offset_left = -548.0
+offset_top = 378.0
+offset_right = -427.0
+offset_bottom = 446.0
+
+[node name="Chico" type="Sprite2D" parent="RecipeBook1/PananakitngTiyan"]
+position = Vector2(30, 38)
+scale = Vector2(2, 2)
+texture = ExtResource("48_ty2tk")
+
+[node name="Banaba" type="Sprite2D" parent="RecipeBook1/PananakitngTiyan"]
+position = Vector2(84, 40)
+scale = Vector2(2, 2)
+texture = ExtResource("33_dmafy")
+
+[node name="Pagsusuka" type="Control" parent="RecipeBook1"]
+anchors_preset = 0
+offset_left = -360.0
+offset_top = 386.0
+offset_right = -239.0
+offset_bottom = 454.0
+
+[node name="Chico" type="Sprite2D" parent="RecipeBook1/Pagsusuka"]
+position = Vector2(82, 38)
+scale = Vector2(2, 2)
+texture = ExtResource("48_ty2tk")
+
+[node name="Lemon" type="Sprite2D" parent="RecipeBook1/Pagsusuka"]
+position = Vector2(33.125, 38)
+scale = Vector2(2, 2)
+texture = ExtResource("51_e13wj")
+
+[node name="Headache" type="Control" parent="RecipeBook1"]
+anchors_preset = 0
+offset_left = -176.0
+offset_top = 386.0
+offset_right = -55.0
+offset_bottom = 454.0
+
+[node name="Watermelon" type="Sprite2D" parent="RecipeBook1/Headache"]
+position = Vector2(34, 38)
+scale = Vector2(2, 2)
+texture = ExtResource("51_kr36m")
+
+[node name="Lemon" type="Sprite2D" parent="RecipeBook1/Headache"]
+position = Vector2(87.125, 42)
+scale = Vector2(2, 2)
+texture = ExtResource("51_e13wj")

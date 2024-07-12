@@ -1,0 +1,57 @@
+[gd_scene load_steps=6 format=3 uid="uid://kduerykxeyke"]
+
+[ext_resource type="FontVariation" uid="uid://ckeuldwvf8rq5" path="res://Assets/Fonts/mcpe_font.tres" id="1_a7dgt"]
+[ext_resource type="Script" path="res://World/Shop.gd" id="1_tqilb"]
+[ext_resource type="PackedScene" uid="uid://d1iiy0trs0o3c" path="res://World/shop_menu.tscn" id="3_tesu2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oe7nn"]
+size = Vector2(103, 99)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ioled"]
+
+[node name="Shop" type="Area2D"]
+z_index = 5
+script = ExtResource("1_tqilb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(55.5, 39.5)
+shape = SubResource("RectangleShape2D_oe7nn")
+
+[node name="enter_shop_area" type="Node2D" parent="."]
+z_index = 5
+position = Vector2(111, 49)
+scale = Vector2(0.5, 0.5)
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="enter_shop_area"]
+self_modulate = Color(0.0627451, 0.0627451, 0.0627451, 0.129412)
+position = Vector2(13.3519, -20.0988)
+scale = Vector2(14.0048, 18.1958)
+mesh = SubResource("BoxMesh_ioled")
+
+[node name="Label" type="Label" parent="enter_shop_area"]
+offset_left = 8.34495
+offset_top = -30.9857
+offset_right = 20.3449
+offset_bottom = -2.98568
+theme_override_fonts/font = ExtResource("1_a7dgt")
+text = "E"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="enter_shop_area/Label"]
+layout_mode = 0
+offset_left = 15.8554
+offset_top = 5.0247
+offset_right = 71.8554
+offset_bottom = 33.0247
+scale = Vector2(0.5, 0.5)
+theme_override_fonts/font = ExtResource("1_a7dgt")
+text = "Interact"
+metadata/_edit_use_anchors_ = true
+
+[node name="UI Canvas" type="CanvasLayer" parent="."]
+layer = 4
+
+[node name="shop_menu" parent="UI Canvas" instance=ExtResource("3_tesu2")]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

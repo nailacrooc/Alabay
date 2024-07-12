@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://7h6m5gniw67q"]
+
+[ext_resource type="Script" path="res://Assets/Items/Spawnable Items/spawn_bayabas.gd" id="1_535ev"]
+
+[node name="spawn_bayabas" type="Node2D"]
+script = ExtResource("1_535ev")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 75.0
+autostart = true
+
+[node name="spawn_area" type="ReferenceRect" parent="."]
+offset_right = 64.0
+offset_bottom = 64.0
+
+[node name="bayabas_spawn" type="Node2D" parent="."]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

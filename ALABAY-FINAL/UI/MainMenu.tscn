@@ -1,0 +1,190 @@
+[gd_scene load_steps=8 format=3 uid="uid://bjs6612h5g74k"]
+
+[ext_resource type="Script" path="res://UI/MainMenu.gd" id="1_34qis"]
+[ext_resource type="FontVariation" uid="uid://ckeuldwvf8rq5" path="res://Assets/Fonts/mcpe_font.tres" id="2_6jmpj"]
+[ext_resource type="Texture2D" uid="uid://covv3evrx7xja" path="res://Assets/Others/Screen_Title.png" id="2_ib5vr"]
+[ext_resource type="AudioStream" uid="uid://bclj7i8c5751d" path="res://Music/Background_Music/Dance of the Moonlight.wav" id="5_6qpr4"]
+[ext_resource type="FontFile" uid="uid://c2fe063latqy4" path="res://Assets/Fonts/Minecraftia-Regular.ttf" id="5_h4ub4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4kvp4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uh325"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_34qis")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_ib5vr")
+
+[node name="menu_music" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_6qpr4")
+
+[node name="MainMenu" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Play" type="Button" parent="MainMenu"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.139
+anchor_top = 0.617
+anchor_right = 0.25
+anchor_bottom = 0.738
+offset_left = -0.128021
+offset_top = 0.18396
+offset_bottom = -0.22403
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_pressed_color = Color(0.393086, 0.393086, 0.393085, 1)
+theme_override_colors/font_hover_color = Color(0.392157, 0.392157, 0.392157, 1)
+theme_override_fonts/font = ExtResource("2_6jmpj")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/focus = SubResource("StyleBoxEmpty_4kvp4")
+text = "PLAY"
+flat = true
+alignment = 0
+icon_alignment = 1
+
+[node name="Credits" type="Button" parent="MainMenu"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.139
+anchor_top = 0.716
+anchor_right = 0.319
+anchor_bottom = 0.836
+offset_left = -0.128021
+offset_top = 0.0319824
+offset_right = 0.511993
+offset_bottom = 0.271973
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_pressed_color = Color(0.392157, 0.392157, 0.392157, 1)
+theme_override_colors/font_hover_color = Color(0.392157, 0.392157, 0.392157, 1)
+theme_override_fonts/font = ExtResource("2_6jmpj")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/focus = SubResource("StyleBoxEmpty_uh325")
+text = "CREDITS"
+flat = true
+alignment = 0
+icon_alignment = 1
+
+[node name="Exit" type="Button" parent="MainMenu"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.139
+anchor_top = 0.815
+anchor_right = 0.241
+anchor_bottom = 0.935
+offset_left = -0.128021
+offset_top = -0.120056
+offset_right = 0.367981
+offset_bottom = 0.119934
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_pressed_color = Color(0.392157, 0.392157, 0.392157, 1)
+theme_override_colors/font_hover_color = Color(0.392157, 0.392157, 0.392157, 1)
+theme_override_fonts/font = ExtResource("2_6jmpj")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/focus = SubResource("StyleBoxEmpty_uh325")
+text = "EXIT
+"
+flat = true
+alignment = 0
+icon_alignment = 1
+
+[node name="CreditsMenu" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Back" type="Button" parent="CreditsMenu"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.111
+anchor_top = 0.827
+anchor_right = 0.222
+anchor_bottom = 0.948
+offset_left = 0.127991
+offset_top = 0.104004
+offset_right = 0.255981
+offset_bottom = -0.304077
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_pressed_color = Color(0.392157, 0.392157, 0.392157, 1)
+theme_override_colors/font_hover_color = Color(0.392157, 0.392157, 0.392157, 1)
+theme_override_fonts/font = ExtResource("2_6jmpj")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/focus = SubResource("StyleBoxEmpty_uh325")
+text = "BACK
+"
+flat = true
+alignment = 0
+icon_alignment = 1
+
+[node name="Label" type="Label" parent="CreditsMenu"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.111
+anchor_top = 0.642
+anchor_right = 0.49
+anchor_bottom = 0.81
+offset_left = 0.127991
+offset_top = -0.0160217
+offset_right = 0.52002
+offset_bottom = 0.119934
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("5_h4ub4")
+theme_override_font_sizes/font_size = 30
+text = "Kurt Patrick Wes Moleno
+Alian Gem Axel N. Crooc"
+
+[node name="Label2" type="Label" parent="CreditsMenu"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.583
+anchor_top = 0.642
+anchor_right = 0.937
+anchor_bottom = 0.81
+offset_left = 0.383972
+offset_top = -0.0160217
+offset_right = 0.575928
+offset_bottom = 0.119934
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("5_h4ub4")
+theme_override_font_sizes/font_size = 30
+text = "Darrem Gonzaga
+John Joshua F. Garcia"
+
+[connection signal="pressed" from="MainMenu/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="MainMenu/Credits" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="MainMenu/Exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="CreditsMenu/Back" to="." method="_on_back_pressed"]
